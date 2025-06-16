@@ -1,0 +1,308 @@
+@use "../global" as *;
+
+// .nav-btn___________________________________
+button.nav-btn {
+  width: 33px;
+  height: auto;
+  position: relative;
+  span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #F7FAF6;
+  }
+  .text {
+    font-size: 9px;
+    color: #F7FAF6;
+    font-weight: 400;
+    letter-spacing: 0.29em;
+    text-align: center;
+    margin-top: 15px;
+    transition: all .5s;
+  }
+}
+
+button.nav-btn,
+button.nav-btn span {
+  display: inline-block;
+  transition: all .5s;
+  box-sizing: border-box;
+}
+
+button.nav-btn span:nth-of-type(1) {
+  top: 0;
+}
+
+button.nav-btn span:nth-of-type(2) {
+  top: 8px;
+}
+
+button.nav-btn span:nth-of-type(1) {
+  animation: btn07-bar01 .75s forwards;
+}
+
+@keyframes btn07-bar01 {
+  0% {
+    transform: translateY(12px) rotate(45deg);
+  }
+
+  50% {
+    transform: translateY(8px) rotate(0);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+button.nav-btn span:nth-of-type(2) {
+  animation: btn07-bar02 .75s forwards;
+}
+
+@keyframes btn07-bar02 {
+  0% {
+    transform: translateY(4px) rotate(-45deg);
+  }
+
+  50% {
+    transform: translateY(0) rotate(0);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+button.nav-btn.active span:nth-of-type(1) {
+  animation: active-btn07-bar01 .75s forwards;
+}
+
+@keyframes active-btn07-bar01 {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(8px) rotate(0);
+  }
+
+  100% {
+    transform: translateY(12px) rotate(45deg);
+  }
+}
+
+button.nav-btn.active span:nth-of-type(2) {
+  animation: active-btn07-bar02 .75s forwards;
+}
+
+@keyframes active-btn07-bar02 {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(0);
+  }
+
+  100% {
+    transform: translateY(4px) rotate(-45deg);
+  }
+}
+
+button.nav-btn.active .text {
+  opacity: 0;
+}
+
+@include mq() {
+  button.nav-btn {
+    width: 20px;
+    span {
+      height: 1px;
+    }
+    .text {
+      font-size: 5px;
+      margin-top: 17px;
+    }
+  }
+  button.nav-btn span:nth-of-type(2) {
+    top: 10px;
+  }
+}
+
+// .hamburger-menu___________________________________
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  @include transition;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .wrap {
+    padding: 1.6rem 9.7rem 7.5rem 0;
+    position: relative;
+  }
+  .btn-close {
+    width: 1.9rem;
+    height: 1.9rem;
+    cursor: pointer;
+    position: absolute;
+    top: 2.8rem;
+    right: 3.2rem;
+  }
+  .logo {
+    width: 21.4rem;
+    margin-left: 3rem;
+  }
+  .content {
+    @include flex_b_s;
+    gap: 14.3rem;
+    margin-top: 5.2rem;
+  }
+  .image {
+    width: 41.8rem;
+    img {
+      @include object_fit;
+    }
+  }
+  .menus {
+    flex: 1;
+    @include flex_b_s;
+    gap: 7.6rem;
+    .menu-box {
+      &-01 {
+        width: 26.5rem;
+      }
+      &-02 {
+        width: 30.1rem;
+      }
+    }
+    .menu-item {
+      &:not(:first-of-type) {
+        margin-top: 3.5rem;
+      }
+    }
+    .menu-link {
+      @include flex;
+      align-items: center;
+      gap: 0.8em;
+      &:hover {
+        .en, .ja {
+          color: #caad1a;
+        }
+      }
+      .en {
+        font-size: 3.2rem;
+        letter-spacing: 0.02em;
+        color: #F7FAF6;
+        @include transition;
+      }
+      .ja {
+        &.is-long {
+          letter-spacing: 0.03em;
+        }
+        font-size: 1.3rem;
+        letter-spacing: 0.05em;
+        color: #F7FAF680;
+        position: relative;
+        top: 0.2rem;
+        @include transition;
+      }
+    }
+    .menu-sub {
+      margin-top: 1.6rem;
+      .item {
+        &:not(:first-child) {
+          margin-top: 0.4rem;
+        }
+        a {
+          font-family: "Zen Kaku Gothic New", serif;
+          font-weight: 400;
+          color: #F7FAF6;
+          font-size: 1.2rem;
+          letter-spacing: 0.05em;
+          line-height: 2;
+          @include transition;
+          @include flex;
+          align-items: center;
+          gap: 5px;
+          &::before {
+            content: '';
+            width: 5px;
+            height: 1px;
+            background-color: currentColor;
+            @include transition;
+          }
+          &:hover {
+            &::before {
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include mq() {
+ .hamburger-menu {
+    .wrap {
+      padding: 5.5rem 3.9rem 0;
+    }
+    .btn-close {
+      width: 3rem;
+      height: 3rem;
+      top: 5.5rem;
+      right: 3.9rem;
+    }
+    .logo {
+      width: 27rem;
+      margin-left: 0;
+    }
+    .content {
+      gap: 5rem;
+      max-height: calc(100vh - 9rem);
+      height: auto;
+      overflow-y: scroll;
+    }
+    .image {
+      width: 100%;
+      height: 30rem;
+    }
+    .menus {
+      gap: 2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 70px;
+      .menu-box {
+        &-01 {
+          width: auto;
+        }
+        &-02 {
+          width: auto;
+        }
+      }
+      .menu-link {
+        .en {
+          font-size: 3.3rem;
+        }
+        .ja {
+          font-size: 1.4rem;
+        }
+      }
+      .menu-sub {
+        .item {
+          a {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  } 
+}

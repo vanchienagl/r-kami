@@ -1,0 +1,102 @@
+@use "../global" as *;
+
+// ______________________________________
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  @include transition;
+  transform: translateY(-10px);
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 11.8rem;
+    background-image: linear-gradient( to bottom, rgba(45,54,39,60), rgba(214,220,209,0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &.scroll {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  &-wrap {
+    padding: 1.6rem 3rem 0;
+  }
+  &-content {
+    @include flex_b_c;
+    .logo {
+      width: 21.4rem;
+    }
+    .nav-wrap {
+      @include flex_c_c;
+      gap: 4.8rem;
+    }
+    .nav-menu {
+      .list {
+        @include flex_c;
+        gap: 2.4rem;
+        .link {
+          &:hover {
+            opacity: .7;
+          }
+          color: #F7FAF6;
+          font-size: 1.2rem;
+          letter-spacing: 0;
+          @include flex_c;
+          gap: 0.9rem;
+          @include transition;
+        }
+        .arrow {
+          width: 0.7rem;
+          height: 1.2rem;
+        }
+      }
+    }
+  }
+}
+@include mq() {
+  .header {
+    &::after {
+      height: 13rem;
+    }
+    &-wrap {
+      padding: 5.5rem 3.9rem 0;
+    }
+    &-content {
+      .logo {
+        width: 27rem;
+      }
+      .nav-wrap {
+        @include flex_c_c;
+        gap: 4.8rem;
+      }
+      .nav-menu {
+        .list {
+          @include flex_c;
+          gap: 2.4rem;
+          .link {
+            color: #F7FAF6;
+            font-size: 1.2rem;
+            letter-spacing: 0;
+            @include flex_c;
+            gap: 0.9rem;
+          }
+          .arrow {
+            width: 0.7rem;
+            height: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

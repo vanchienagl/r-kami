@@ -1,0 +1,45 @@
+body {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #25381C;
+  font-feature-settings: "palt";
+
+  h1,
+  h2,
+  h3,
+  span,
+  sup,
+  a,
+  button {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+  }
+}
+
+//Shippori Mincho
+.f-shippori {
+  font-family: "Shippori Mincho", serif;
+}
+
+//Zen Kaku
+.f-zen {
+  font-family: "Zen Kaku Gothic New", serif;
+  font-weight: 400;
+}
+
+//Zen Old
+.f-zen-old {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+}
+
+//Cormorant
+.f-cormorant {
+  font-family: "Cormorant Unicase", serif;
+}
