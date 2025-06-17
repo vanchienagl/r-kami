@@ -12,7 +12,7 @@ const loadFixedMenuPages = (() => {
     const secPagesWrap = document.getElementById('js_sec_p_wrap');
   
     function updateActiveMenu() {
-      let scrollPosition = window.scrollY;
+      let scrollPosition = window.scrollY + window.innerHeight / 2;
       let currentId = '';
   
       for (let section of secPages) {
