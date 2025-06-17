@@ -41,105 +41,56 @@
   }
 
   // ______________________________________
-  // .sec-intro
+  // .bg-sec-p
   // ______________________________________
-  .sec-intro {
+  .bg-sec-p {
+    width: 100vw;
     height: 100vh;
-    .title {
-      font-size: 7.6rem;
-      letter-spacing: 0.05em;
-      line-height: 1.26;
-      color: #25381C;
-      margin: 14.2rem 0 0 9.4rem;
-    }
-    .bg-color {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    .bg-page {
       width: 100%;
       height: 100%;
       position: absolute;
       top: 0;
       left: 0;
-      background-color: #25381C;
       opacity: 0;
-    }
-  }
-  @include mq() {
-    .sec-intro {
-      .title {
-        font-size: 8.3rem;
-        margin: 15rem 0 0 4.6rem;
+      img {
+        @include object_fit;
       }
     }
-  }
-
-  // ______________________________________
-  // .sec-p-top
-  // ______________________________________
-  .sec-p {
-    &.sec-p-top {
-      .bg {
-        &::before {
-          content: '';
-          width: 100%;
-          height: 100%;
-          background-color: rgba(37,56,28,0.9);
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%,-50%);
-        }
-      }
-      .content {
-        width: 98.5rem;
-        margin-left: 0;
-        @include flex_b_s;
-      }
-      .description {
-        width: 100%;
-        padding-left: 62.6rem;
-        .text {
-          &:not(:first-of-type) {
-            margin-top: 9rem;
-          }
-          &.is-small {
-            font-size: 1.6rem;
-            line-height: 3;
-          }
-          font-size: 2.4rem;
-          line-height: 1.87;
-          color: #FFFFFF;
-          letter-spacing: 0.12em;
-          white-space: nowrap;
-        }
+    .bg-page-top {
+      &.active {
+        opacity: 1;
       }
     }
-  }
-  @include mq() {
-   .sec-p {
-      &.sec-p-top {
-        .content {
-          width: 100%;
-          margin: 0;
-          @include flex_c_c;
-          flex-direction: column;
-          text-align: center;
-          gap: 8rem;
-        }
-        .description {
-          width: 100%;
-          text-align: left;
-          padding: 0 5.4rem;
-          .text {
-            font-size: 3.6rem;
-            &:not(:first-of-type) {
-              margin-top: 9.8rem;
-            }
-            &.is-small {
-              font-size: 2.4rem;
-            }
-          }
-        }
+    .bg-page-access {
+      &.active {
+        opacity: 1;
       }
-    } 
+    }
+    .bg-page-design {
+      &.active {
+        opacity: 1;
+      }
+    }
+    .bg-page-garden {
+      &.active {
+        opacity: 1;
+      }
+    }
+    .bg-page-quality {
+      &.active {
+        opacity: 1;
+      }
+    }
+    .bg-page-plan {
+      &.active {
+        opacity: 1;
+      }
+    }
   }
 
   // ______________________________________
@@ -309,6 +260,68 @@
         }
       }
     }
+  }
+
+  // ______________________________________
+  // .sec-p-top
+  // ______________________________________
+  .sec-p-top {
+    .content {
+      width: 98.5rem;
+      margin-left: 0;
+      @include flex_b_s;
+    }
+    .title {
+      font-size: 7.6rem;
+      letter-spacing: 0.05em;
+      line-height: 1.26;
+      color: #fff;
+    }
+    .description {
+      width: 35.7rem;
+      .text {
+        &:not(:first-of-type) {
+          margin-top: 9rem;
+        }
+        &.is-small {
+          font-size: 1.6rem;
+          line-height: 3;
+        }
+        font-size: 2.4rem;
+        line-height: 1.87;
+        color: #FFFFFF;
+        letter-spacing: 0.12em;
+        white-space: nowrap;
+      }
+    }
+  }
+  @include mq() {
+    .sec-p-top {
+      .content {
+        width: 100%;
+        margin: 0;
+        @include flex_c;
+        flex-direction: column;
+        gap: 8rem;
+        padding: 0 5.4rem;
+      }
+      .title {
+        text-align: left;
+      }
+      .description {
+        width: 100%;
+        text-align: left;
+        .text {
+          font-size: 3.6rem;
+          &:not(:first-of-type) {
+            margin-top: 9.8rem;
+          }
+          &.is-small {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    } 
   }
 
   // ______________________________________

@@ -9,6 +9,8 @@ $(document).ready(function () {
   const secIntro = document.getElementById('js_sec_intro');
   const secIntroBg = document.querySelector('#js_sec_intro .bg-color');
   const secIntroTitile = document.querySelector('#js_sec_intro .title');
+  const bgSecPages = document.getElementById('js_bg_sec_pages');
+  const bgSecPage = document.querySelector('.bg-sec-p');
   const secPagesWrapTop = secPagesWrap.offsetTop;
   const secPagesWrapOffset = secPagesWrap.offsetHeight;
 
@@ -40,57 +42,5 @@ $(document).ready(function () {
   window.addEventListener('load', updateActiveMenu);
 
   // Scroll trigger section pages
-  ScrollTrigger.create({
-    invalidateOnRefresh: true,
-    trigger: secIntro,
-    start: 'top top',
-    endTrigger: secPagesWrap,
-    end: "top top",
-    pin: secIntro,
-    pinSpacing: false,
-    // markers: true,
-  });
-
-  gsap.to(secIntroBg, {
-    opacity: '0.9',
-    scrollTrigger: {
-      invalidateOnRefresh: true,
-      trigger: secIntro,
-      start: 'top top',
-      endTrigger: secPagesWrap,
-      end: "top top",
-      scrub: true,
-      // markers: true,
-    },
-  });
-
-  gsap.to(secIntroTitile, {
-    color: '#fff',
-    scrollTrigger: {
-      invalidateOnRefresh: true,
-      trigger: secIntro,
-      start: 'top top',
-      endTrigger: secPagesWrap,
-      end: "top top",
-      scrub: true,
-      // markers: true,
-    },
-  });
-  
-  // sec-p
-  // secPages.forEach((secPage) => {
-  //   ScrollTrigger.create({
-  //     invalidateOnRefresh: true,
-  //     trigger: secPage,
-  //     start: 'top top',
-  //     endTrigger: secPage,
-  //     end: "bottom top",
-  //     toggleClass: { targets: secPage, className: "active" },
-  //     pin: secPage,
-  //     // pinSpacing: false,
-  //     scrub: true,
-  //     markers: true,
-  //   });
-  // });
 
 });

@@ -27,23 +27,33 @@
       </div>
     </section>
 
-    <section class="sec-intro" id="js_sec_intro">
-      <div class="com-bg bg">
-        <div class="bg-color"></div>
-        <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_intro_1.jpg" alt="譲れない正統。">
-      </div>
-      <div class="com-wrap">
-        <h2 class="title">譲れない正統。</h2>
-      </div>
-    </section>
+    <div class="bg-sec-p-wrap" id="js_sec_p_wrap">
 
-    <div class="sec-p-wrap" id="js_sec_p_wrap">
-      <section class="sec-p sec-p-top" id="p-top">
-        <div class="com-bg bg">
+      <div class="bg-sec-p" id="js_bg_sec_pages">
+        <div class="bg-page bg-page-top">
           <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_intro_1.jpg" alt="譲れない正統。">
         </div>
+        <div class="bg-page bg-page-access">
+          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_access_1.jpg" alt="駅徒歩5分の優雅">
+        </div>
+        <div class="bg-page bg-page-design">
+          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_design_1.jpg" alt="全106邸の低層レジデンス">
+        </div>
+        <div class="bg-page bg-page-garden">
+          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_garden_1.jpg" alt="森林浴ができる森の庭">
+        </div>
+        <div class="bg-page bg-page-quality">
+          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_quality_1.jpg" alt="美しい空気に包まれる空間">
+        </div>
+        <div class="bg-page bg-page-plan">
+          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_plan_1.jpg" alt="やさしい光を取り入れる工夫">
+        </div>
+      </div>
+
+      <section class="sec-p sec-p-top" id="p-top">
         <div class="com-wrap wrap">
           <div class="content">
+            <h2 class="title">譲れない正統。</h2>
             <div class="description">
               <p class="text">ずっと先の未来まで<br>正統な邸宅であること。</p>
               <p class="text is-small">ここに住む方の永住を見据え、<br>真の寛ぎを追求し、たどり着いた答え、<br>それが都市に森を作ることでした。<br>さらに、空間設計では、<br>「やさしい光」と「美しい空気」に着目し、<br>普遍的な豊かさをご提案します。</p>
@@ -54,9 +64,6 @@
       </section>
   
       <section class="sec-p sec-p-access" id="p-access">
-        <div class="com-bg bg">
-          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_access_1.jpg" alt="駅徒歩5分の優雅">
-        </div>
         <div class="com-wrap wrap">
           <div class="content">
             <div class="image">
@@ -81,9 +88,6 @@
       </section>
   
       <section class="sec-p sec-p-design" id="p-design">
-        <div class="com-bg bg">
-          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_design_1.jpg" alt="全106邸の低層レジデンス">
-        </div>
         <div class="com-wrap wrap">
           <div class="content">
             <div class="image">
@@ -103,9 +107,6 @@
       </section>
       
       <section class="sec-p sec-p-garden" id="p-garden">
-        <div class="com-bg bg">
-          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_garden_1.jpg" alt="森林浴ができる森の庭">
-        </div>
         <div class="com-wrap wrap">
           <div class="content">
             <div class="image">
@@ -125,9 +126,6 @@
       </section>
   
       <section class="sec-p sec-p-quality" id="p-quality">
-        <div class="com-bg bg">
-          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_quality_1.jpg" alt="美しい空気に包まれる空間">
-        </div>
         <div class="com-wrap wrap">
           <div class="content">
             <div class="image">
@@ -150,9 +148,6 @@
       </section>
   
       <section class="sec-p sec-p-plan" id="p-plan">
-        <div class="com-bg bg">
-          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_plan_1.jpg" alt="やさしい光を取り入れる工夫">
-        </div>
         <div class="com-wrap wrap">
           <div class="content">
             <h2 class="image">
@@ -174,26 +169,26 @@
 
     <section class="sec-information">
       <div class="com-wrap wrap">
-        <h2 class="heading">総合地所の最上級シリーズ<br>「ルネグラン」をこの地に。</h2>
+        <h2 class="heading m_down">総合地所の最上級シリーズ<br>「ルネグラン」をこの地に。</h2>
         <ul class="list-data">
-          <li class="item item-01">
+          <li class="item item-01 m_down">
             <img loading="lazy" src="<?php echo h($path_img); ?>/top/txt_information_1.svg" alt="「上石神井」駅 徒歩5分">
           </li>
-          <li class="item item-02">
+          <li class="item item-02 m_down">
             <img loading="lazy" src="<?php echo h($path_img); ?>/top/txt_information_2.svg" alt="第一種低層住居専用地域">
           </li>
-          <li class="item item-03">
+          <li class="item item-03 m_down">
             <img loading="lazy" src="<?php echo h($path_img); ?>/top/txt_information_3.svg" alt="7,500㎡超/全106邸">
           </li>
-          <li class="item item-04">
+          <li class="item item-04 m_down">
             <img loading="lazy" src="<?php echo h($path_img); ?>/top/txt_information_1.svg" alt="認定低炭素レジデンス">
           </li>
         </ul>
         <div class="box-info">
-          <p class="title f-zen">INFORMATION</p>
-          <p class="heading">物件エントリー受付開始</p>
-          <p class="text">物件エントリーいただいた方には、<br>販売日程や物件パンフレットなどの最新情報を限定サイトにて、<br>いち早くご案内いたします。</p>
-          <div class="com-buttons buttons">
+          <p class="title f-zen m_down">INFORMATION</p>
+          <p class="heading m_down">物件エントリー受付開始</p>
+          <p class="text m_down">物件エントリーいただいた方には、<br>販売日程や物件パンフレットなどの最新情報を限定サイトにて、<br>いち早くご案内いたします。</p>
+          <div class="com-buttons buttons m_down">
             <a href="#" class="button f-zen-old is-entry">物件エントリー<span class="arrow"></a>
             <a href="#" class="button f-zen-old is-web">物件エントリー限定サイト<span class="arrow"></a>
           </div>

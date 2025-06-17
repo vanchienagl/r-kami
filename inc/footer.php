@@ -1,6 +1,6 @@
 <footer class="footer" id="footer">
   <div class="com-wrap">
-    <div class="menus _pc">
+    <div class="menus _pc m_down">
       <ul class="menu-box menu-box-01">
         <li class="menu-item">
           <a href="#" class="menu-link">
@@ -69,7 +69,7 @@
         </li>
       </ul>
     </div>
-    <div class="menus _sp">
+    <div class="menus _sp m_down">
       <ul class="menu-box">
         <li class="menu-item">
           <a href="#" class="menu-link">
@@ -138,7 +138,7 @@
     </div>
   
     <?php if (!empty($note)) : ?>
-      <div class="f-note">
+      <div class="f-note m_down">
         <div class="com-content">
           <?php
           // $noteの行数を取得
@@ -155,13 +155,13 @@
     <?php endif; ?>
 
     <div class="box-request">
-      <figure class="bg">
+      <figure class="bg m_down">
         <img loading="lazy" src="<?php echo h($path_img); ?>/common/img_request.jpg" alt="資料請求受付開始">
       </figure>
-      <div class="content">
-        <p class="title en f-zen">REQUEST</p>
+      <div class="content m_down">
+        <p class="title en f-zen m_down">REQUEST</p>
         <p class="title ja">資料請求受付開始</p>
-        <div class="com-buttons">
+        <div class="com-buttons m_down">
           <a href="#" class="button f-zen-old is-entry">物件エントリー<span class="arrow"></span></a>
           <a href="#" class="button f-zen-old is-web">物件エントリー限定サイト<span class="arrow"></span></a>
         </div>
@@ -169,13 +169,13 @@
     </div>
 
     <div class="box-contact">
-      <p class="title f-zen">CONTACT</p>
-      <p class="brief">お問い合わせは「ルネグラン上石神井」販売準備室</p>
-      <a href="tel:0120-106-154" class="tel-number">
+      <p class="title f-zen m_down">CONTACT</p>
+      <p class="brief m_down">お問い合わせは「ルネグラン上石神井」販売準備室</p>
+      <a href="tel:0120-106-154" class="tel-number m_down">
         <span class="icon"><img loading="lazy" src="<?php echo h($path_img); ?>/common/icon_tel.svg" alt="tel"></span>
         <span class="num">0120-106-154</span>
       </a>
-      <p class="time">【営業時間】00:00〜00:00　【定休日】火・水曜日(祝日除く)<br>※携帯電話からも通話可能です。</p>
+      <p class="time m_down">【営業時間】00:00〜00:00　【定休日】火・水曜日(祝日除く)<br>※携帯電話からも通話可能です。</p>
     </div>
 
     <div class="box-banner">
