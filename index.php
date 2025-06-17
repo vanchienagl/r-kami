@@ -1,9 +1,9 @@
 <?php include(dirname(__FILE__) . '/config/config.php'); ?>
 <?php
-  $title = '';
-  $page = 'index';
-  $og_type = 'website';
-  include(dirname(__FILE__) . '/inc/head.php');
+$title = '';
+$page = 'index';
+$og_type = 'website';
+include(dirname(__FILE__) . '/inc/head.php');
 ?>
 <link rel="canonical" href="https://jgran27.jp/_index.php">
 </head>
@@ -11,24 +11,61 @@
 
 <body id="pageTop">
   <?php
-    $page = 'index';
-    include(dirname(__FILE__) . '/inc/header.php');
+  $page = 'index';
+  include(dirname(__FILE__) . '/inc/header.php');
   ?>
   <!-- ______main______________//header____________________ -->
   <main id="mainWrap" class="active">
     <!-- ____________________content____________________ -->
-    <section class="sec-firstview" id="js_sec_firstview">
+    <div class="btn-scroll" id="js_btn_scroll">
+      <div class="mouse">
+        <div class="dot"></div>
+        <svg width="30" height="49" viewBox="0 0 30 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.601562" y="0.5" width="28.7973" height="48" rx="14.3986" stroke="white" />
+        </svg>
+      </div>
+      <p class="text">SCROLL</p>
+    </div>
+
+    <div class="box-fixed-menu-pages _pc" id="js_fixed_menu_pages">
+      <div class="menu">
+        <li class="item item-01 active">
+          <a href="#p-top" class="f-zen link" data-target="p-top">TOP</a>
+        </li>
+        <li class="item item-02">
+          <a href="#p-access" class="f-zen link" data-target="p-access">駅徒歩5分の優雅</a>
+        </li>
+        <li class="item item-03">
+          <a href="#p-design" class="f-zen link" data-target="p-design">全106邸の低層レジデンス</a>
+        </li>
+        <li class="item item-04">
+          <a href="#p-garden" class="f-zen link" data-target="p-garden">森林浴ができる森の庭</a>
+        </li>
+        <li class="item item-05">
+          <a href="#p-quality" class="f-zen link" data-target="p-quality">美しい空気に包まれる空間</a>
+        </li>
+        <li class="item item-06">
+          <a href="#p-plan" class="f-zen link" data-target="p-plan">やさしい光を取り入れる工夫</a>
+        </li>
+      </div>
+    </div>
+
+    <div class="sec-firstview" id="js_sec_firstview">
       <picture class="com-bg bg">
         <source media="(max-width:750px)" srcset="<?php echo h($path_img); ?>/top/sp/img_firstview_1.png">
         <img src="<?php echo h($path_img); ?>/top/img_firstview_1.png" alt="firstview">
       </picture>
-      <div class="logo">
+      <div class="logo" id="js_logo">
         <img class="img" src="<?php echo h($path_img); ?>/common/logo_1.svg" alt="ルネグラン上石神井">
       </div>
-    </section>
+      <div class="img-box" id="js_img_box">
+        <figure class="img" id="js_img">
+          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_intro_1.jpg" alt="譲れない正統。">
+        </figure>
+      </div>
+    </div>
 
     <div class="bg-sec-p-wrap" id="js_sec_p_wrap">
-
       <div class="bg-sec-p" id="js_bg_sec_pages">
         <div class="bg-page bg-page-top">
           <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_intro_1.jpg" alt="譲れない正統。">
@@ -62,7 +99,7 @@
           </div>
         </div>
       </section>
-  
+
       <section class="sec-p sec-p-access" id="p-access">
         <div class="com-wrap wrap">
           <div class="content">
@@ -86,7 +123,7 @@
           </div>
         </div>
       </section>
-  
+
       <section class="sec-p sec-p-design" id="p-design">
         <div class="com-wrap wrap">
           <div class="content">
@@ -105,7 +142,7 @@
           </div>
         </div>
       </section>
-      
+
       <section class="sec-p sec-p-garden" id="p-garden">
         <div class="com-wrap wrap">
           <div class="content">
@@ -124,7 +161,7 @@
           </div>
         </div>
       </section>
-  
+
       <section class="sec-p sec-p-quality" id="p-quality">
         <div class="com-wrap wrap">
           <div class="content">
@@ -146,7 +183,7 @@
           </div>
         </div>
       </section>
-  
+
       <section class="sec-p sec-p-plan" id="p-plan">
         <div class="com-wrap wrap">
           <div class="content">
@@ -199,14 +236,14 @@
   </main>
 
   <?php
-    $note = '※掲載の距離・徒歩分数は地図上を計測し80mを1分として算出（端数は切上げ）したものです。<br>
+  $note = '※掲載の距離・徒歩分数は地図上を計測し80mを1分として算出（端数は切上げ）したものです。<br>
     ※掲載の完成予想CGは設計図書を基に描き起こしたもので、実際とは多少異なる場合がございます。外観の細部・設備機器・配管類及び電柱・架線・道路標識・周辺建物等は一部省略または簡略化しております。植栽は、実際に植樹する樹形、枝ぶり、葉や色合いとは異なる場合があり、特定の季節の状況を示すものではありません。また、竣工時には完成予想CG程度には成長しておりません。タイルや各部材等につきましては、実際と質感・色等の見え方が異なる可能性があります。また、今後変更になる場合があります。※共用部のご利用につきましては管理規約上、利用内容・利用時間等に制限があります。管理規約集・使用細則を遵守願います。<br>
     ※掲載のimage photoはイメージであり、実際とは異なります。<br>
     ※掲載の情報は2025年2月時点のもので、今後変更になる場合がございます。';
   ?>
 
   <?php
-    include(dirname(__FILE__) . '/inc/footer.php');
+  include(dirname(__FILE__) . '/inc/footer.php');
   ?>
   <!-- ____________________// footer -->
 
@@ -214,4 +251,5 @@
   <script type="text/javascript" src="<?php echo h($path_js); ?>/top.js"></script>
   <!-- __________________//script____________________ -->
 </body>
+
 </html>

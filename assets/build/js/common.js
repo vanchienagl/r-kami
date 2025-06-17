@@ -192,94 +192,70 @@ $(document).ready(function () {
 
 // ____________________________________________________________________________
 // ____________________________________________________________________________
-// SCROLL
+// Header Menu
 $(function () {
-  const fixedMenuFooter = document.getElementById("fixedMenuFooter");
-  function showHeaderActive() {
+  function showHeaderMenu() {
     if ($(window).scrollTop() > 0) {
       $('header').addClass("scroll");
-      fixedMenuFooter.classList.add("show");
     } else {
       $('header').removeClass("scroll");
-      fixedMenuFooter.classList.remove("show");
     }
   }
-  window.addEventListener('scroll', showHeaderActive);
-  window.addEventListener('load', showHeaderActive);
+  window.addEventListener('scroll', showHeaderMenu);
+  window.addEventListener('load', showHeaderMenu);
 });
 
-$(document).ready(function () {
-  const fixedMenuButtons = document.getElementById('js_fixed_menu_buttons');
-  const comScroll = document.getElementById('js_com_scroll');
-  const secIntro = document.getElementById('js_sec_intro');
-  const backToTopBtn = document.getElementById("backToTop");
-  const footer = document.getElementById("footer");
-  const footerTop = footer.offsetTop;
-  let sW = window.innerWidth;
-
-  // Back To Top
-  window.addEventListener("scroll", () => {
-    const windowBottom = window.scrollY + window.innerHeight;
-    if (windowBottom > footerTop) {
-      backToTopBtn.classList.add("show");
+// ____________________________________________________________________________
+// ____________________________________________________________________________
+// Fixed Menu Footer SP
+$(function () {
+  function showFixedMenuFooter() {
+    if ($(window).scrollTop() > 0) {
+      $('.js_fixed_menu_footer').addClass("show");
     } else {
-      backToTopBtn.classList.remove("show");
+      $('.js_fixed_menu_footer').removeClass("show");
     }
-  });
-  backToTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-
-  // js_fixed_menu_buttons
-  gsap.to(fixedMenuButtons, {
-    x: "0",
-    opacity: 1,
-    scrollTrigger: {
-      invalidateOnRefresh: true,
-      trigger: secIntro,
-      start: 'top top',
-      endTrigger: secIntro,
-      end: "top top",
-      scrub: true,
-      // markers: true,
-    },
-  });
-
-  // js_com_scroll
-  let setBottom = '';
-  let setRight = '';
-  if (sW > 750) {
-    setBottom = "5rem";
-    setRight = "7.8rem";
-  } else {
-    setBottom = "16.5rem";
-    setRight = "3.2rem";
   }
-  window.addEventListener("scroll", () => {
-    const windowBottom = window.scrollY + window.innerHeight;
+  window.addEventListener('scroll', showFixedMenuFooter);
+  window.addEventListener('load', showFixedMenuFooter);
+});
+
+// ____________________________________________________________________________
+// ____________________________________________________________________________
+// Button Back To Top
+$(function () {
+  const $backToTopBtn = $("#backToTop");
+  const $footer = $("#footer");
+  const footerTop = $footer.offset().top;
+
+  $(window).on("scroll", function () {
+    const windowBottom = $(window).scrollTop() + $(window).height();
+
     if (windowBottom > footerTop) {
-      comScroll.classList.add("hide");
+      $backToTopBtn.addClass("show");
     } else {
-      comScroll.classList.remove("hide");
+      $backToTopBtn.removeClass("show");
     }
   });
-  gsap.to(comScroll, {
-    right: setRight,
-    bottom: setBottom,
-    left: "unset",
-    xPercent: 0,
-    scrollTrigger: {
-      invalidateOnRefresh: true,
-      trigger: secIntro,
-      start: 'top top',
-      endTrigger: secIntro,
-      end: "top top",
-      scrub: true,
-      // markers: true,
-    },
+
+  $backToTopBtn.on("click", function () {
+    $("html, body").animate({ scrollTop: 0 }, "smooth");
   });
-  
+});
+
+
+// ____________________________________________________________________________
+// ____________________________________________________________________________
+// Fixed Menu Buttons PC
+$(function () {
+  const $fixedMenuButtons = $('#js_fixed_menu_buttons');
+  const $secWrapPages = $('#js_sec_p_wrap');
+
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() > $secWrapPages.offset().top) {
+      $fixedMenuButtons.addClass('show');
+    } else {
+      $fixedMenuButtons.removeClass('show');
+    }
+  });
 });

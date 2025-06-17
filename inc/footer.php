@@ -232,7 +232,7 @@
   </div>
 </footer>
 
-<div id="fixedMenuFooter" class="com-fixed-menu-footer _sp">
+<div class="js_fixed_menu_footer com-fixed-menu-footer _sp">
   <ul class="menu">
     <li class="item">
       <a href="#" class="link">物件概要</a>

@@ -396,87 +396,6 @@ figure.m_scale {
 }
 
 // ______________________________________
-// .com-scroll
-// ______________________________________
-.com-scroll {
-  &.hide {
-    opacity: 0;
-    visibility: hidden;
-  }
-  opacity: 1;
-  visibility: visible;
-  width: fit-content;
-  @include flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 11.2rem;
-  z-index: 3;
-  @include transition;
-  .mouse {
-    width: 3rem;
-    position: relative;
-    .dot {
-      width: 5px;
-      height: 5px;
-      background: #FFFFFF;
-      border-radius: 50%;
-      position: absolute;
-      left: 50%;
-      top: 20%;
-      transform: translateX(-50%);
-      animation: bounceDot 1.2s infinite ease-in-out alternate;
-    }
-    @keyframes bounceDot {
-      0% {
-        transform: translateX(-50%) translateY(0);
-      }
-      100% {
-        transform: translateX(-50%) translateY(20px);
-      }
-    }
-  }
-  .text {
-    font-size: 1.2rem;
-    color: #F7FAF650;
-    text-align: center;
-  }
-}
-@include mq() {
-  .com-scroll {
-    gap: 2.2rem;
-    bottom: 28.6rem;
-    .mouse {
-      width: 4.4rem;
-      .dot {
-        width: 0.8rem;
-        height: 0.8rem;
-        top: 1.5rem;
-        animation: bounceDot 1.2s infinite ease-in-out alternate;
-      }
-      svg {
-        width: 100%;
-        height: 7.2rem;
-      }
-    }
-    @keyframes bounceDot {
-      0% {
-        transform: translateX(-50%) translateY(0);
-      }
-      100% {
-        transform: translateX(-50%) translateY(3.2rem);
-      }
-    }
-    .text {
-      font-size: 1.8rem;
-    }
-  }
-}
-
-// ______________________________________
 // .com-back-to-top
 // ______________________________________
 .com-back-to-top {
@@ -546,10 +465,13 @@ figure.m_scale {
   }
 }
 
-// .com-fixed-menu-footer___________________________________
+// ______________________________________
+// .com-fixed-menu-footer
+// ______________________________________
 .com-fixed-menu-footer {
   &.show {
     opacity: 1;
+    visibility: visible;
   }
   width: 100%;
   height: 9.5rem;
@@ -558,7 +480,10 @@ figure.m_scale {
   left: 0;
   z-index: 1;
   opacity: 0;
+  visibility: hidden;
   @include transition;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
   .menu {
     height: 100%;
     display: grid;
@@ -588,16 +513,19 @@ figure.m_scale {
   }
 }
 
-// .com-fixed-menu-buttons__________________________________
+// ______________________________________
+// .com-fixed-menu-buttons
+// ______________________________________
 .com-fixed-menu-buttons {
   position: fixed;
   top: 50%;
-  right: 0;
-  transform: translateX(100%) translateY(-50%);
+  right: -100%;
+  transform: translateY(-50%);
   z-index: 1;
-  opacity: 0;
   @include transition;
-  transition-duration: 1s;
+  &.show {
+    right: 0;
+  }
   .buttons {
     @include flex_c;
     flex-direction: column;
@@ -627,81 +555,5 @@ figure.m_scale {
     border: 1px solid transparent;
     @include transition;
     transition-duration: 1s;
-  }
-}
-
-// .com-fixed-menu-pages____________________________________
-.com-fixed-menu-pages {
-  &.show {
-    opacity: 1;
-    visibility: visible;
-    .menu {
-      .item {
-        transform: translateX(0);
-      }
-    }
-  }
-  position: fixed;
-  left: 5rem;
-  bottom: 5.5rem;
-  z-index: 1;
-  opacity: 0;
-  visibility: hidden;
-  @include transition;
-  transition-duration: 1.5s;
-  .menu {
-    .item {
-      &:not(:first-of-type) {
-        margin-top: 1.5rem;
-      }
-      &:hover,
-      &.active {
-        .link {
-          color: #F7FAF6;
-          gap: 1rem;
-          &::before {
-            width: 3.1rem;
-            background-color: #F7FAF6;
-          }
-        }
-      }
-      &-01 {
-        transition-delay: 0s;
-      }
-      &-02 {
-        transition-delay: 0.2s;
-      }
-      &-03 {
-        transition-delay: 0.4s;
-      }
-      &-04 {
-        transition-delay: 0.6s;
-      }
-      &-05 {
-        transition-delay: 0.8s;
-      }
-      &-06 {
-        transition-delay: 1s;
-      }
-      @include transition;
-      transform: translateX(-10px);
-      transition-duration: 1s;
-    }
-    .link {
-      font-size: 1.2rem;
-      font-weight: 400;
-      @include flex;
-      align-items: center;
-      gap: 3rem;
-      color: #F7FAF630;
-      @include transition;
-      &::before {
-        content: '';
-        width: 1.1rem;
-        height: 1px;
-        background-color: #F7FAF630;
-        @include transition;
-      }
-    }
   }
 }
