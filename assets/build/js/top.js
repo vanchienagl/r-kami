@@ -30,7 +30,7 @@ const loadFixedMenuPages = (() => {
           invalidateOnRefresh: true,
           trigger: secPagesWrap,
           start: 'top-=100 top',
-          end: "bottom 50%",
+          end: "bottom 95%",
           toggleClass: { targets: fixedMenuPages, className: "show" },
           // markers: true,
         },
@@ -112,7 +112,7 @@ $(function () {
     scrollTrigger: {
       invalidateOnRefresh: true,
       trigger: "#p-access",
-      start: 'top top',
+      start: 'top 40%',
       end: "top top",
       onEnter: () => {
         $(title).addClass("hide");
@@ -146,35 +146,35 @@ $(function () {
   });
   ScrollTrigger.create({
     trigger: "#p-access",
-    start: "top top",
+    start: "top 50%",
     end: "bottom top",
     toggleClass: { targets: ".bg-page-access", className: "active" },
     // markers: true,
   });
   ScrollTrigger.create({
     trigger: "#p-design",
-    start: "top top",
+    start: "top 50%",
     end: "bottom top",
     toggleClass: { targets: ".bg-page-design", className: "active" },
     // markers: true,
   });
   ScrollTrigger.create({
     trigger: "#p-garden",
-    start: "top top",
+    start: "top 50%",
     end: "bottom top",
     toggleClass: { targets: ".bg-page-garden", className: "active" },
     // markers: true,
   });
   ScrollTrigger.create({
     trigger: "#p-quality",
-    start: "top top",
+    start: "top 60",
     end: "bottom top",
     toggleClass: { targets: ".bg-page-quality", className: "active" },
     // markers: true,
   });
   ScrollTrigger.create({
     trigger: "#p-plan",
-    start: "top top",
+    start: "top 50%",
     end: "bottom top",
     toggleClass: { targets: ".bg-page-plan", className: "active" },
     // markers: true,
@@ -187,38 +187,58 @@ $(function () {
 $(function () {
   const secPageWrap = document.getElementById('js_sec_p_wrap');
   const btnScroll = document.getElementById('js_btn_scroll');
-  const footer = document.getElementById("footer");
-  const footerTop = footer.offsetTop;
+  const btnScrollRight = document.getElementById('js_btn_scroll_right');
+  const secInformation = document.getElementById('js_sec_information');
 
-  let setBottom = '';
-  let setRight = '';
-  if (sW > 750) {
-    setBottom = "5rem";
-    setRight = "7.8rem";
-  } else {
-    setBottom = "16.5rem";
-    setRight = "3.2rem";
-  }
-  window.addEventListener("scroll", () => {
-    const windowBottom = window.scrollY + window.innerHeight;
-    if (windowBottom > footerTop) {
-      btnScroll.classList.add("hide");
-    } else {
-      btnScroll.classList.remove("hide");
-    }
-  });
   gsap.to(btnScroll, {
-    right: setRight,
-    bottom: setBottom,
-    left: "unset",
-    xPercent: 0,
     scrollTrigger: {
       invalidateOnRefresh: true,
       trigger: secPageWrap,
       start: 'top top',
       end: "top top",
       scrub: true,
+      onEnter: () => {
+        $(btnScroll).addClass('hide');
+      },
+      onLeaveBack: () => {
+        $(btnScroll).removeClass('hide');
+      },
       // markers: true,
     },
   });
+
+  gsap.to(btnScrollRight, {
+    scrollTrigger: {
+      invalidateOnRefresh: true,
+      trigger: secPageWrap,
+      start: 'top top',
+      end: "top top",
+      scrub: true,
+      onEnter: () => {
+        $(btnScrollRight).addClass('show');
+      },
+      onLeaveBack: () => {
+        $(btnScrollRight).removeClass('show');
+      },
+      // markers: true,
+    },
+  });
+
+  gsap.to(btnScrollRight, {
+    scrollTrigger: {
+      invalidateOnRefresh: true,
+      trigger: secInformation,
+      start: 'top bottom',
+      end: "top bottom",
+      scrub: true,
+      onEnter: () => {
+        $(btnScrollRight).removeClass('show').addClass('hide');
+      },
+      onLeaveBack: () => {
+        $(btnScrollRight).addClass('show').removeClass('hide');
+      },
+      // markers: true,
+    },
+  });
+
 });

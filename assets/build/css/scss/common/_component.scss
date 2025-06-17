@@ -519,12 +519,17 @@ figure.m_scale {
 .com-fixed-menu-buttons {
   position: fixed;
   top: 50%;
-  right: -100%;
   transform: translateY(-50%);
+  right: -5rem;
+  opacity: 0;
   z-index: 1;
+  visibility: hidden;
   @include transition;
+  transition-duration: 1s;
   &.show {
     right: 0;
+    opacity: 1;
+    visibility: visible;
   }
   .buttons {
     @include flex_c;

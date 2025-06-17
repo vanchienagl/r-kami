@@ -148,6 +148,7 @@
       top: 14.2rem;
       transform: translateX(-50%);
       z-index: 2;
+      @include transition;
       &.hide {
         opacity: 0;
       }
@@ -214,6 +215,7 @@
       left: 0;
       opacity: 0;
       @include transition;
+      transition-duration: 1.5s;
       img {
         @include object_fit;
       }
@@ -278,16 +280,17 @@
       @include flex_c_c;
     }
     .content {
-      width: 79.2rem;
-      margin: 0 0 0 31.1rem;
+      width: 75.1rem;
+      margin: 0 0 0 10rem;
       @include flex_b_c;
+      gap: 9.2rem;
     }
     .image {
       width: 30rem;
       box-shadow: rgba(0, 0, 0, 0.06) 8px 46px 40px;
     }
     .info {
-      width: 40rem;
+      width: 35.9rem;
       .desc {
         font-size: 3.2rem;
         letter-spacing: 0.07em;
@@ -634,6 +637,18 @@
       opacity: 0;
       visibility: hidden;
     }
+    &-right {
+      left: unset;
+      transform: none;
+      right: 7.8rem;
+      bottom: 3.2rem;
+      opacity: 0;
+      visibility: hidden;
+      &.show {
+      opacity: 1;
+      visibility: visible;    
+      }
+    }
     opacity: 1;
     visibility: visible;
     width: fit-content;
@@ -646,6 +661,8 @@
     transform: translateX(-50%);
     bottom: 11.2rem;
     z-index: 3;
+    @include transition;
+    transition-duration: 1s;
     .mouse {
       width: 3rem;
       position: relative;

@@ -1707,15 +1707,21 @@ figure.m_scale.m_scale_on img {
 .com-fixed-menu-buttons {
   position: fixed;
   top: 50%;
-  right: -100%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  right: -5rem;
+  opacity: 0;
   z-index: 1;
+  visibility: hidden;
   -webkit-transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
   transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 .com-fixed-menu-buttons.show {
   right: 0;
+  opacity: 1;
+  visibility: visible;
 }
 .com-fixed-menu-buttons .buttons {
   display: -webkit-box;
@@ -1911,6 +1917,8 @@ figure.m_scale.m_scale_on img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 2;
+  -webkit-transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
+  transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
 }
 #pageTop .sec-img-box .title.hide {
   opacity: 0;
@@ -1982,6 +1990,8 @@ figure.m_scale.m_scale_on img {
   opacity: 0;
   -webkit-transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
   transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
 }
 #pageTop .bg-sec-p .bg-page img {
   -o-object-fit: cover;
@@ -2043,8 +2053,8 @@ figure.m_scale.m_scale_on img {
           align-items: center;
 }
 #pageTop .sec-p .content {
-  width: 79.2rem;
-  margin: 0 0 0 31.1rem;
+  width: 75.1rem;
+  margin: 0 0 0 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2056,6 +2066,7 @@ figure.m_scale.m_scale_on img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 9.2rem;
 }
 #pageTop .sec-p .image {
   width: 30rem;
@@ -2063,7 +2074,7 @@ figure.m_scale.m_scale_on img {
           box-shadow: rgba(0, 0, 0, 0.06) 8px 46px 40px;
 }
 #pageTop .sec-p .info {
-  width: 40rem;
+  width: 35.9rem;
 }
 #pageTop .sec-p .info .desc {
   font-size: 3.2rem;
@@ -2490,10 +2501,27 @@ figure.m_scale.m_scale_on img {
           transform: translateX(-50%);
   bottom: 11.2rem;
   z-index: 3;
+  -webkit-transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
+  transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 #pageTop .btn-scroll.hide {
   opacity: 0;
   visibility: hidden;
+}
+#pageTop .btn-scroll-right {
+  left: unset;
+  -webkit-transform: none;
+          transform: none;
+  right: 7.8rem;
+  bottom: 3.2rem;
+  opacity: 0;
+  visibility: hidden;
+}
+#pageTop .btn-scroll-right.show {
+  opacity: 1;
+  visibility: visible;
 }
 #pageTop .btn-scroll .mouse {
   width: 3rem;
