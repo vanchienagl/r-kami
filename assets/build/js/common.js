@@ -208,78 +208,78 @@ $(function () {
   window.addEventListener('load', showHeaderActive);
 });
 
-$(document).ready(function () {
-  const fixedMenuButtons = document.getElementById('js_fixed_menu_buttons');
-  const comScroll = document.getElementById('js_com_scroll');
-  const secIntro = document.getElementById('js_sec_intro');
-  const backToTopBtn = document.getElementById("backToTop");
-  const footer = document.getElementById("footer");
-  const footerTop = footer.offsetTop;
-  let sW = window.innerWidth;
+// $(document).ready(function () {
+//   const fixedMenuButtons = document.getElementById('js_fixed_menu_buttons');
+//   const comScroll = document.getElementById('js_com_scroll');
+//   const secIntro = document.getElementById('js_sec_intro');
+//   const backToTopBtn = document.getElementById("backToTop");
+//   const footer = document.getElementById("footer");
+//   const footerTop = footer.offsetTop;
+//   let sW = window.innerWidth;
 
-  // Back To Top
-  window.addEventListener("scroll", () => {
-    const windowBottom = window.scrollY + window.innerHeight;
-    if (windowBottom > footerTop) {
-      backToTopBtn.classList.add("show");
-    } else {
-      backToTopBtn.classList.remove("show");
-    }
-  });
-  backToTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
+//   // Back To Top
+//   window.addEventListener("scroll", () => {
+//     const windowBottom = window.scrollY + window.innerHeight;
+//     if (windowBottom > footerTop) {
+//       backToTopBtn.classList.add("show");
+//     } else {
+//       backToTopBtn.classList.remove("show");
+//     }
+//   });
+//   backToTopBtn.addEventListener("click", () => {
+//     window.scrollTo({
+//       top: 0,
+//       behavior: "smooth"
+//     });
+//   });
 
-  // js_fixed_menu_buttons
-  gsap.to(fixedMenuButtons, {
-    x: "0",
-    opacity: 1,
-    scrollTrigger: {
-      invalidateOnRefresh: true,
-      trigger: secIntro,
-      start: 'top top',
-      endTrigger: secIntro,
-      end: "top top",
-      scrub: true,
-      // markers: true,
-    },
-  });
+//   // js_fixed_menu_buttons
+//   gsap.to(fixedMenuButtons, {
+//     x: "0",
+//     opacity: 1,
+//     scrollTrigger: {
+//       invalidateOnRefresh: true,
+//       trigger: secIntro,
+//       start: 'top top',
+//       endTrigger: secIntro,
+//       end: "top top",
+//       scrub: true,
+//       // markers: true,
+//     },
+//   });
 
-  // js_com_scroll
-  let setBottom = '';
-  let setRight = '';
-  if (sW > 750) {
-    setBottom = "5rem";
-    setRight = "7.8rem";
-  } else {
-    setBottom = "16.5rem";
-    setRight = "3.2rem";
-  }
-  window.addEventListener("scroll", () => {
-    const windowBottom = window.scrollY + window.innerHeight;
-    if (windowBottom > footerTop) {
-      comScroll.classList.add("hide");
-    } else {
-      comScroll.classList.remove("hide");
-    }
-  });
-  gsap.to(comScroll, {
-    right: setRight,
-    bottom: setBottom,
-    left: "unset",
-    xPercent: 0,
-    scrollTrigger: {
-      invalidateOnRefresh: true,
-      trigger: secIntro,
-      start: 'top top',
-      endTrigger: secIntro,
-      end: "top top",
-      scrub: true,
-      // markers: true,
-    },
-  });
+//   // js_com_scroll
+//   let setBottom = '';
+//   let setRight = '';
+//   if (sW > 750) {
+//     setBottom = "5rem";
+//     setRight = "7.8rem";
+//   } else {
+//     setBottom = "16.5rem";
+//     setRight = "3.2rem";
+//   }
+//   window.addEventListener("scroll", () => {
+//     const windowBottom = window.scrollY + window.innerHeight;
+//     if (windowBottom > footerTop) {
+//       comScroll.classList.add("hide");
+//     } else {
+//       comScroll.classList.remove("hide");
+//     }
+//   });
+//   gsap.to(comScroll, {
+//     right: setRight,
+//     bottom: setBottom,
+//     left: "unset",
+//     xPercent: 0,
+//     scrollTrigger: {
+//       invalidateOnRefresh: true,
+//       trigger: secIntro,
+//       start: 'top top',
+//       endTrigger: secIntro,
+//       end: "top top",
+//       scrub: true,
+//       // markers: true,
+//     },
+//   });
   
-});
+// });

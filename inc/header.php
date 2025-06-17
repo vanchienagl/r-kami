@@ -152,10 +152,6 @@
   </div>
 </div>
 
-<section class="com-bg-main-wrap">
-  <div class="js_com_bg_main com-bg-main com-bg-main-01"></div>
-</section>
-
 <div class="com-scroll" id="js_com_scroll">
     <div class="mouse">
     <div class="dot"></div>
@@ -176,22 +172,22 @@
 <div class="com-fixed-menu-pages _pc" id="js_fixed_menu_pages">
   <div class="menu">
     <li class="item item-01 active">
-      <a href="#p-top" class="f-zen link" data-target="p-top">TOP</a>
+      <a href="#sec03" class="f-zen link" data-target="p-top">TOP</a>
     </li>
     <li class="item item-02">
-      <a href="#p-access" class="f-zen link" data-target="p-access">駅徒歩5分の優雅</a>
+      <a href="#sec04" class="f-zen link" data-target="p-access">駅徒歩5分の優雅</a>
     </li>
     <li class="item item-03">
-      <a href="#p-design" class="f-zen link" data-target="p-design">全106邸の低層レジデンス</a>
+      <a href="#sec05" class="f-zen link" data-target="p-design">全106邸の低層レジデンス</a>
     </li>
     <li class="item item-04">
-      <a href="#p-garden" class="f-zen link" data-target="p-garden">森林浴ができる森の庭</a>
+      <a href="#sec06" class="f-zen link" data-target="p-garden">森林浴ができる森の庭</a>
     </li>
     <li class="item item-05">
-      <a href="#p-quality" class="f-zen link" data-target="p-quality">美しい空気に包まれる空間</a>
+      <a href="#sec07" class="f-zen link" data-target="p-quality">美しい空気に包まれる空間</a>
     </li>
     <li class="item item-06">
-      <a href="#p-plan" class="f-zen link" data-target="p-plan">やさしい光を取り入れる工夫</a>
+      <a href="#sec08" class="f-zen link" data-target="p-plan">やさしい光を取り入れる工夫</a>
     </li>
   </div>
 </div>
