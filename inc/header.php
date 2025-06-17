@@ -21,7 +21,7 @@
         <button class="nav-btn" id="jsNavBtn">
           <span></span>
           <span></span>
-          <p class="text f-zen-old">MENU</p>
+          <span class="text f-zen-old">MENU</span>
         </button>
       </div>
     </div>

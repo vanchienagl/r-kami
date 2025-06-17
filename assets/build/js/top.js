@@ -29,7 +29,7 @@ const loadFixedMenuPages = (() => {
         scrollTrigger: {
           invalidateOnRefresh: true,
           trigger: secPagesWrap,
-          start: 'top top',
+          start: 'top-=100 top',
           end: "bottom 50%",
           toggleClass: { targets: fixedMenuPages, className: "show" },
           // markers: true,
@@ -49,68 +49,93 @@ const loadFixedMenuPages = (() => {
 // ____________________________________________________________________________
 // Scroll Trigger Section Pages
 $(function () {
-  const secPageWrap = document.getElementById('js_sec_p_wrap');
   const secFirstView = document.getElementById('js_sec_firstview');
-  const imgBox = document.getElementById('js_img_box');
   const logo = document.getElementById('js_logo');
-  const btnScroll = document.getElementById('js_btn_scroll');
+  const imgBox = document.getElementById('js_img_box');
+  const img = document.getElementById('js_img');
+  const bg = document.getElementById('js_bg');
+  const title = document.getElementById('js_title');
   let sW = window.innerWidth;
-  const footer = document.getElementById("footer");
-  const footerTop = footer.offsetTop;
-  const bgSecPages = document.getElementById('js_bg_sec_pages');
 
   // First View
-  ScrollTrigger.create({
-    invalidateOnRefresh: true,
-    trigger: secFirstView,
-    start: 'top top',
-    end: "bottom top",
-    pin: secFirstView,
-    // markers: true,
-  });
-
-  // ScrollTrigger.create({
-  //   invalidateOnRefresh: true,
-  //   trigger: imgBox,
-  //   start: 'top top',
-  //   end: "bottom top",
-  //   pin: imgBox,
-  //   markers: true,
-  // });
-
   gsap.to(imgBox, {
-    width: '100vw',
-    opacity: 1,
     scrollTrigger: {
       invalidateOnRefresh: true,
-      trigger: imgBox,
+      trigger: secFirstView,
+      start: 'top top',
+      end: 'bottom top',
+      scrub: true,
+      onEnter: () => {
+        $(imgBox).addClass("active");
+        $(logo).addClass("hide");
+        $(img).addClass("active");
+      },
+      onLeaveBack: () => {
+        $(imgBox).removeClass("active");
+        $(logo).removeClass("hide");
+        $(img).removeClass("active");
+      },
+      // markers: true,
+    },
+  });
+
+  gsap.to(bg, {
+    opacity: 0.8,
+    scrollTrigger: {
+      invalidateOnRefresh: true,
+      trigger: secFirstView,
       start: 'top top',
       end: "bottom top",
       scrub: true,
       onEnter: () => {
-        $(logo).addClass("hide");
+        $(bg).addClass("active");
       },
       onLeaveBack: () => {
-        $(logo).removeClass("hide");
+        $(bg).removeClass("active");
       },
-      markers: true,
+      // markers: true,
     },
   });
 
-  // Scroll trigger section pages
-  // gsap.to(bgSecPages, {
-  //   scrollTrigger: {
-  //     trigger: secPagesWrap,
-  //     start: 'top top',
-  //     endTrigger: secPagesWrap,
-  //     end: "bottom top",
-  //     // pin: bgSecPages,
-  //     // pinSpacing: false,
-  //     // position: "fixed",
-  //     toggleClass: { targets: bgSecPages, className: "active" },
-  //     // markers: true,
-  //   },
-  // });
+  gsap.to(title, {
+    color: '#fff',
+    scrollTrigger: {
+      invalidateOnRefresh: true,
+      trigger: secFirstView,
+      start: '25% top',
+      end: "bottom top",
+      scrub: true,
+      // markers: true,
+    },
+  });
+  gsap.to(title, {
+    scrollTrigger: {
+      invalidateOnRefresh: true,
+      trigger: "#p-access",
+      start: 'top top',
+      end: "top top",
+      onEnter: () => {
+        $(title).addClass("hide");
+      },
+      onLeaveBack: () => {
+        $(title).removeClass("hide");
+      },
+      // markers: true,
+    },
+  });
+  if (sW < 750) {
+    gsap.to(title, {
+      opacity: 0,
+      scrollTrigger: {
+        invalidateOnRefresh: true,
+        trigger: secFirstView,
+        start: '25% top',
+        end: "80% top",
+        scrub: true,
+        // markers: true,
+      },
+    });
+  }
 
   ScrollTrigger.create({
     trigger: "#p-top",
@@ -154,8 +179,17 @@ $(function () {
     toggleClass: { targets: ".bg-page-plan", className: "active" },
     // markers: true,
   });
+});
 
-  // js_btn_scroll
+// ____________________________________________________________________________
+// ____________________________________________________________________________
+// Button Scroll
+$(function () {
+  const secPageWrap = document.getElementById('js_sec_p_wrap');
+  const btnScroll = document.getElementById('js_btn_scroll');
+  const footer = document.getElementById("footer");
+  const footerTop = footer.offsetTop;
+
   let setBottom = '';
   let setRight = '';
   if (sW > 750) {
@@ -187,5 +221,4 @@ $(function () {
       // markers: true,
     },
   });
-
 });

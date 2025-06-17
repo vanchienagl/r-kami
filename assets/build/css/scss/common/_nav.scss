@@ -13,6 +13,10 @@ button.nav-btn {
     background-color: #F7FAF6;
   }
   .text {
+    display: inline-block;
+    position: static;
+    height: auto;
+    background-color: transparent;
     font-size: 9px;
     color: #F7FAF6;
     font-weight: 400;

@@ -28,8 +28,8 @@ include(dirname(__FILE__) . '/inc/head.php');
     </div>
 
     <div class="box-fixed-menu-pages _pc" id="js_fixed_menu_pages">
-      <div class="menu">
-        <li class="item item-01 active">
+      <ul class="menu">
+        <li class="item item-01">
           <a href="#p-top" class="f-zen link" data-target="p-top">TOP</a>
         </li>
         <li class="item item-02">
@@ -47,7 +47,7 @@ include(dirname(__FILE__) . '/inc/head.php');
         <li class="item item-06">
           <a href="#p-plan" class="f-zen link" data-target="p-plan">やさしい光を取り入れる工夫</a>
         </li>
-      </div>
+      </ul>
     </div>
 
     <div class="sec-firstview" id="js_sec_firstview">
@@ -58,17 +58,20 @@ include(dirname(__FILE__) . '/inc/head.php');
       <div class="logo" id="js_logo">
         <img class="img" src="<?php echo h($path_img); ?>/common/logo_1.svg" alt="ルネグラン上石神井">
       </div>
-      <div class="img-box" id="js_img_box">
-        <figure class="img" id="js_img">
-          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_intro_1.jpg" alt="譲れない正統。">
-        </figure>
-      </div>
     </div>
+
+    <section class="sec-img-box" id="js_img_box">
+      <h2 class="title" id="js_title">譲れない正統。</h2>
+      <div class="bg" id="js_bg"></div>
+      <figure class="img" id="js_img">
+        <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_intro_1.jpg" alt="譲れない正統。">
+      </figure>
+    </section>
 
     <div class="bg-sec-p-wrap" id="js_sec_p_wrap">
       <div class="bg-sec-p" id="js_bg_sec_pages">
         <div class="bg-page bg-page-top">
-          <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_intro_1.jpg" alt="譲れない正統。">
+          <img loading="lazy" class="_sp" src="<?php echo h($path_img); ?>/top/bg_intro_1.jpg" alt="譲れない正統。">
         </div>
         <div class="bg-page bg-page-access">
           <img loading="lazy" src="<?php echo h($path_img); ?>/top/bg_access_1.jpg" alt="駅徒歩5分の優雅">
@@ -87,10 +90,9 @@ include(dirname(__FILE__) . '/inc/head.php');
         </div>
       </div>
 
-      <section class="sec-p sec-p-top" id="p-top">
+      <div class="sec-p sec-p-top" id="p-top">
         <div class="com-wrap wrap">
           <div class="content">
-            <h2 class="title">譲れない正統。</h2>
             <div class="description">
               <p class="text">ずっと先の未来まで<br>正統な邸宅であること。</p>
               <p class="text is-small">ここに住む方の永住を見据え、<br>真の寛ぎを追求し、たどり着いた答え、<br>それが都市に森を作ることでした。<br>さらに、空間設計では、<br>「やさしい光」と「美しい空気」に着目し、<br>普遍的な豊かさをご提案します。</p>
@@ -98,9 +100,9 @@ include(dirname(__FILE__) . '/inc/head.php');
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="sec-p sec-p-access" id="p-access">
+      <div class="sec-p sec-p-access" id="p-access">
         <div class="com-wrap wrap">
           <div class="content">
             <div class="image">
@@ -122,9 +124,9 @@ include(dirname(__FILE__) . '/inc/head.php');
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="sec-p sec-p-design" id="p-design">
+      <div class="sec-p sec-p-design" id="p-design">
         <div class="com-wrap wrap">
           <div class="content">
             <div class="image">
@@ -141,9 +143,9 @@ include(dirname(__FILE__) . '/inc/head.php');
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="sec-p sec-p-garden" id="p-garden">
+      <div class="sec-p sec-p-garden" id="p-garden">
         <div class="com-wrap wrap">
           <div class="content">
             <div class="image">
@@ -160,9 +162,9 @@ include(dirname(__FILE__) . '/inc/head.php');
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="sec-p sec-p-quality" id="p-quality">
+      <div class="sec-p sec-p-quality" id="p-quality">
         <div class="com-wrap wrap">
           <div class="content">
             <div class="image">
@@ -182,9 +184,9 @@ include(dirname(__FILE__) . '/inc/head.php');
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="sec-p sec-p-plan" id="p-plan">
+      <div class="sec-p sec-p-plan" id="p-plan">
         <div class="com-wrap wrap">
           <div class="content">
             <h2 class="image">
@@ -201,7 +203,7 @@ include(dirname(__FILE__) . '/inc/head.php');
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
 
     <section class="sec-information">
@@ -226,8 +228,8 @@ include(dirname(__FILE__) . '/inc/head.php');
           <p class="heading m_down">物件エントリー受付開始</p>
           <p class="text m_down">物件エントリーいただいた方には、<br>販売日程や物件パンフレットなどの最新情報を限定サイトにて、<br>いち早くご案内いたします。</p>
           <div class="com-buttons buttons m_down">
-            <a href="#" class="button f-zen-old is-entry">物件エントリー<span class="arrow"></a>
-            <a href="#" class="button f-zen-old is-web">物件エントリー限定サイト<span class="arrow"></a>
+            <a href="#" class="button f-zen-old is-entry">物件エントリー<span class="arrow"></span></a>
+            <a href="#" class="button f-zen-old is-web">物件エントリー限定サイト<span class="arrow"></span></a>
           </div>
         </div>
       </div>

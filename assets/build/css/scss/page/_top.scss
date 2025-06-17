@@ -122,15 +122,78 @@
     }
   }
 
-  .img-box {
-    @include posi_c_c;
-    width: 50rem;
+  // ______________________________________
+  // .sec-img-box
+  // ______________________________________
+  .sec-img-box {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
     opacity: 0;
+    z-index: -1;
     @include transition;
+    &.active {
+      opacity: 1;
+    }
+    .title {
+      width: 98.5rem;
+      font-size: 7.6rem;
+      letter-spacing: 0.05em;
+      line-height: 1.26;
+      color: #25381C;
+      position: absolute;
+      left: 50%;
+      top: 14.2rem;
+      transform: translateX(-50%);
+      z-index: 2;
+      &.hide {
+        opacity: 0;
+      }
+    }
+    .bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #25381C;
+      z-index: 1;
+      opacity: 0;
+      &.active {
+        opacity: 0.9;
+      }
+    }
+    .img {
+      &.active {
+        width: 100%;
+      }
+      width: 30rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      @include transition;
+      transition-duration: 1s;
+    }
     img {
       @include object_fit;
       object-position: center top;
     }
+  }
+  @include mq() {
+   .sec-img-box {
+      .title {
+        width: 100%;
+        position: absolute;
+        top: calc(50% - 12rem);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: left;
+        padding: 0 4rem;
+      }
+    } 
   }
 
   // ______________________________________
@@ -153,20 +216,6 @@
       @include transition;
       img {
         @include object_fit;
-      }
-    }
-    .bg-page-top {
-      &.active {
-        opacity: 1;
-        &::before {
-          content: '';
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          background-color: rgba(47, 56, 41, 0.95);
-        }
       }
     }
     .bg-page-access {
@@ -195,11 +244,29 @@
       }
     }
   }
+  @include mq() {
+    .bg-page-top {
+      &.active {
+        opacity: 1;
+        &::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(47, 56, 41, 0.95);
+        }
+      }
+    }
+  }
 
   // ______________________________________
   // .sec-p
   // ______________________________________
   .sec-p {
+    position: relative;
+    overflow: hidden;
     height: 100vh;
     &.active {
       .bg {
@@ -374,14 +441,9 @@
       margin-left: 0;
       @include flex_b_s;
     }
-    .title {
-      font-size: 7.6rem;
-      letter-spacing: 0.05em;
-      line-height: 1.26;
-      color: #fff;
-    }
     .description {
       width: 35.7rem;
+      padding-left: 63rem;
       .text {
         &:not(:first-of-type) {
           margin-top: 9rem;
@@ -414,6 +476,7 @@
       .description {
         width: 100%;
         text-align: left;
+        padding-left: 0;
         .text {
           font-size: 3.6rem;
           &:not(:first-of-type) {
