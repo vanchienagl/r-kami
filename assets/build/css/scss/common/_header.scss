@@ -8,12 +8,6 @@
   width: 100%;
   height: auto;
   z-index: 3;
-  opacity: 0;
-  visibility: hidden;
-  @include transition;
-  transform: translateY(-10px);
-  transition-duration: 1s;
-  transition-delay: 0.5s;
   &::after {
     content: '';
     width: 100%;
@@ -24,11 +18,7 @@
     left: 0;
     z-index: -1;
   }
-  &.scroll {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
+  
   &-wrap {
     padding: 1.6rem 3rem 0;
   }

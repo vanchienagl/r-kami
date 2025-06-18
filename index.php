@@ -17,6 +17,9 @@ include(dirname(__FILE__) . '/inc/head.php');
   <!-- ______main______________//header____________________ -->
   <main id="mainWrap" class="active">
     <!-- ____________________content____________________ -->
+     <div class="com-bg-main-wrap">
+      <div class="js_com_bg_main com-bg-main com-bg-main-01"></div>
+    </div>
     <div class="btn-scroll" id="js_btn_scroll">
       <div class="mouse">
         <div class="dot"></div>

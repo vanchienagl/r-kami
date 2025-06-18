@@ -152,10 +152,6 @@
   </div>
 </div>
 
-<div class="com-bg-main-wrap">
-  <div class="js_com_bg_main com-bg-main com-bg-main-01"></div>
-</div>
-
 <div class="com-fixed-menu-buttons _pc" id="js_fixed_menu_buttons">
   <div class="buttons">
     <a href="#" class="button f-zen-old is-entry">物件エントリー</a>

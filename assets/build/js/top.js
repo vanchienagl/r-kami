@@ -242,3 +242,19 @@ $(function () {
   });
 
 });
+
+// ____________________________________________________________________________
+// ____________________________________________________________________________
+// Fixed Menu Buttons PC
+$(function () {
+  const $fixedMenuButtons = $('#js_fixed_menu_buttons');
+  const $secWrapPages = $('#js_sec_p_wrap');
+
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() > $secWrapPages.offset().top) {
+      $fixedMenuButtons.addClass('show');
+    } else {
+      $fixedMenuButtons.removeClass('show');
+    }
+  });
+});
