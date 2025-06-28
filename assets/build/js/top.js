@@ -102,7 +102,7 @@ $(function () {
     scrollTrigger: {
       invalidateOnRefresh: true,
       trigger: secFirstView,
-      start: '25% top',
+      start: '30% top',
       end: "bottom top",
       scrub: true,
       // markers: true,
@@ -124,17 +124,24 @@ $(function () {
     },
   });
   if (sW < 750) {
-    gsap.to(title, {
-      opacity: 0,
+    const tl = gsap.timeline({
       scrollTrigger: {
         invalidateOnRefresh: true,
         trigger: secFirstView,
-        start: '25% top',
-        end: "80% top",
+        start: "25% top",
+        end: "70% top",
         scrub: true,
         // markers: true,
-      },
+      }
     });
+
+    tl.to(title, {
+      color: "#fff",
+    }, 0); // start from the beginning
+
+    tl.to(title, {
+      opacity: 0,
+    }, 0.5); // start at 50% scroll (relative timeline)
   }
 
   ScrollTrigger.create({
