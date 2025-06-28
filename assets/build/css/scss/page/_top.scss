@@ -35,25 +35,6 @@
   }
 
   // ______________________________________
-  // .com-fixed-menu-buttons
-  // ______________________________________
-  .com-fixed-menu-buttons {
-    top: 50%;
-    transform: translateY(-50%);
-    right: -10px;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    @include transition;
-    transition-duration: 1s;
-    &.show {
-      right: 0;
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
-  // ______________________________________
   // .box-fixed-menu-pages
   // ______________________________________
   .box-fixed-menu-pages {

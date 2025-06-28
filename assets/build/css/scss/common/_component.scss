@@ -518,8 +518,19 @@ figure.m_scale {
 // ______________________________________
 .com-fixed-menu-buttons {
   position: fixed;
-  top: 23rem;
-  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -10px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition-duration: 1s;
+  @include transition;
+  // &.show {
+  //   right: 0;
+  //   opacity: 1;
+  //   visibility: visible;
+  // }
   .buttons {
     @include flex_c;
     flex-direction: column;
