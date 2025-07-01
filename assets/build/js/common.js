@@ -243,3 +243,66 @@ $(function () {
   });
 });
 
+// ____________________________________________________________________________
+// ____________________________________________________________________________
+// Common MV
+$(function () {
+  function scaleMV() {
+    if ($(window).scrollTop() > 0) {
+      $('.js_com_mv').addClass("active");
+    } else {
+      $('.js_com_mv').removeClass("active");
+    }
+  }
+  window.addEventListener('scroll', scaleMV);
+  window.addEventListener('load', scaleMV);
+});
+
+
+// ____________________________________________________________________________
+// ____________________________________________________________________________
+// Show Fixed Menu Sub Pages
+const loadFixedMenuSubPage = (() => {
+  document.addEventListener("DOMContentLoaded", () => {
+    const fixedMenuPages = document.querySelector('.js_com_fixed_menu_subpage');
+    const links = document.querySelectorAll('.js_com_fixed_menu_subpage .link');
+    const secPages = document.querySelectorAll('.js_sec_page');
+    const secShowMenu = secPages[0];
+    const secHideMenu = secPages[secPages.length - 1];
+
+    if (fixedMenuPages) {
+      gsap.to(fixedMenuPages, {
+        scrollTrigger: {
+          invalidateOnRefresh: true,
+          trigger: secShowMenu,
+          start: 'top 50%',
+          endTrigger: secHideMenu,
+          end: "bottom top",
+          toggleClass: { targets: fixedMenuPages, className: "show" },
+          markers: true,
+        },
+      });
+    }
+
+    function updateActiveMenu() {
+      let scrollPosition = window.scrollY + window.innerHeight / 2;
+      let currentId = '';
+
+      secPages.forEach(section => {
+        if (scrollPosition >= section.offsetTop) {
+          currentId = section.id;
+        }
+      });
+
+      links.forEach(link => {
+        const hash = link.getAttribute('href');
+        const targetId = hash.replace('#', '');
+        const isActive = targetId === currentId;
+        link.parentNode.classList.toggle('active', isActive);
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveMenu);
+    window.addEventListener('load', updateActiveMenu);
+  });
+})();

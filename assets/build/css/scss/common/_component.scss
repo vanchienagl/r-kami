@@ -296,7 +296,9 @@ figure.m_scale {
     background-color: #2F3829;
   }
   &-02 {
-    background-color: #fff;
+    background: url(../img/common/bg_common_2.png) repeat-y;
+    background-position: center top;
+    background-size: cover;
   }
 }
 
@@ -518,19 +520,9 @@ figure.m_scale {
 // ______________________________________
 .com-fixed-menu-buttons {
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -10px;
-  opacity: 0;
-  visibility: hidden;
+  top: calc((230 / 1300) * 100vw);
+  right: 0;
   z-index: 1;
-  transition-duration: 1s;
-  @include transition;
-  // &.show {
-  //   right: 0;
-  //   opacity: 1;
-  //   visibility: visible;
-  // }
   .buttons {
     @include flex_c;
     flex-direction: column;
@@ -560,5 +552,124 @@ figure.m_scale {
     border: 1px solid transparent;
     @include transition;
     transition-duration: 1s;
+  }
+}
+
+// ______________________________________
+// .com-mv
+// ______________________________________
+.com-mv {
+  position: relative;
+  margin-top: 8.6rem;
+  margin-bottom: 34.9rem;
+  &.active {
+    .img {
+      transform: scale(1);
+    }
+  }
+  .content {
+    width: 100%;
+    padding: 0 15rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .img {
+    transform: scale(0.825);
+    @include transition;
+  }
+  .title {
+    font-size: 1.2rem;
+    line-height: 1;
+    letter-spacing: 0.2em;
+    color: #F7FAF6;
+    text-align: center;
+    margin-bottom: 1.3rem;
+  }
+  .heading {
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: #F7FAF6;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+}
+
+// ______________________________________
+// .com-fixed-menu-subpage
+// ______________________________________
+.com-fixed-menu-subpage {
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5rem;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  @include transition;
+  .menu {
+    .item {
+      &.active {
+        .dot {
+          background-color: #25381C;
+        }
+        .text {
+          color: #25381C;
+        }
+      }
+      &:not(:first-of-type) {
+        margin-top: 4.8rem;
+      }
+    }
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+    }
+    .dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: transparent;
+      @include transition;
+    }
+    .text {
+      font-family: "Zen Kaku Gothic New", serif;
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: rgba(37, 56, 28, 0.23);
+      line-height: 1;
+      letter-spacing: 0.02em;
+      @include transition;
+    }
+  }
+}
+@include mq() {
+  .com-fixed-menu-subpage {
+    position: fixed;
+    top: 251px;
+    transform: none;
+    left: 19px;
+    .menu {
+      .item {
+        &.active {
+          .dot {
+            background-color: #25381c;
+          }
+        }
+        &:not(:first-of-type) {
+          margin-top: 26px;
+        }
+      }
+      .dot {
+        background-color: rgba(37, 56, 28, 0.3);
+      }
+    }
   }
 }

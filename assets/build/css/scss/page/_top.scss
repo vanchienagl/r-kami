@@ -1,6 +1,4 @@
 @use "../global" as *;
-
-// ________________________________________
 #pageTop {
   // ______________________________________
   // header menu
@@ -113,6 +111,22 @@
   }
 
   // ______________________________________
+  // .com-fixed-menu-buttons
+  // ______________________________________
+  .com-fixed-menu-buttons {
+    right: -10px;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 1s;
+    @include transition;
+    &.show {
+      right: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  // ______________________________________
   // .sec-firstview
   // ______________________________________
   .sec-firstview {
@@ -193,7 +207,7 @@
       left: 50%;
       transform: translate(-50%,-50%);
       @include transition;
-      transition-duration: 1s;
+      transition-duration: 2s;
     }
     img {
       @include object_fit;
@@ -318,7 +332,8 @@
       }
     }
     .buttons {
-      @include flex;
+      display: flex;
+      align-items: center;
       gap: 1.6rem;
       .button {
         &-02 {

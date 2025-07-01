@@ -1,0 +1,549 @@
+@use "../global" as *;
+
+#pageBrand {
+  // ______________________________________
+  // .com-mv
+  // ______________________________________
+  .com-mv {
+    margin-bottom: 16.8rem;
+  }
+
+  // ______________________________________
+  // .sec-intro
+  // ______________________________________
+  .sec-intro {
+    .heading {
+      font-family: "Shippori Mincho", serif;
+      font-size: 3.2rem;
+      font-weight: 400;
+      line-height: 1.8;
+      letter-spacing: 0.07em;
+      text-align: center;
+      &-01 {
+        margin-bottom: 5.3rem;
+      }
+      &-02 {
+        margin-bottom: 3.6rem;
+      }
+    }
+    .image {
+      width: 117px;
+      margin: 0 auto 5.3rem;
+    }
+    .description {
+      margin-bottom: 11.8rem;
+    }
+    .txt {
+      font-family: "Shippori Mincho", serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.2;
+      letter-spacing: 0.12em;
+      text-align: center;
+      &:not(:first-of-type) {
+        margin-top: 4rem;
+      }
+    }
+    .renai {
+      &-group {
+        width: 118rem;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 8px;
+        padding-top: 8.3rem;
+        padding-bottom: 9.3rem;
+      }
+      &-heading {
+        font-size: 2.4rem;
+        font-weight: 400;
+        color: #25381C;
+        line-height: 1.8;
+        letter-spacing: 0.07em;
+        text-align: center;
+        margin-bottom: 6.4rem;
+      }
+      &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.4rem;
+        margin-bottom: 9.6rem;
+        .item {
+          &-01 {
+            .logo {
+              width: 117px;
+            }
+          }
+          &-02 {
+            .logo {
+              width: 155px;
+            }
+          }
+          &-03 {
+            .logo {
+              width: 177px;
+            }
+          }
+          &-04 {
+            .logo {
+              width: 141px;
+            }
+          }
+          display: flex;
+          flex-direction: column;
+          gap: 3.2rem;
+        }
+        .logo {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 1.6rem;
+        }
+        .title {
+          font-family: "Shippori Mincho", serif;
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 1.6;
+          letter-spacing: 0.02em;
+          text-align: center;
+          margin-bottom: 0.8rem;
+        }
+        .text {
+          font-family: "Shippori Mincho", serif;
+          font-size: 1.3rem;
+          font-weight: 500;
+          line-height: 1.6;
+          text-align: center;
+          letter-spacing: 0.02em;
+        }
+        .image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 4px;
+          margin: 0;
+        }
+      }
+      &-button {
+        &:hover {
+          background-color: #FFFFFF;
+          color: #2F3829;
+          border-color: #2F3829;
+          &::after {
+            background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1058_2832)'%3E%3Cpath d='M2.9375 0.619141V11.1816H13.5V0.619141H2.9375ZM12.4844 10.166H3.95312V1.63477H12.4844V10.166Z' fill='%232F3829'/%3E%3Cpath d='M1.51562 12.6035V8.13477V4.07227V3.05664H0.5V13.6191H11.0625V12.6035H10.0469H1.51562Z' fill='%232F3829'/%3E%3Cpath d='M6.41143 8.56217L9.40394 5.56963V7.72268H10.4196V3.83594H6.53285V4.85156H8.68587L5.69336 7.84408L6.41143 8.56217Z' fill='%232F3829'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1058_2832'%3E%3Crect width='13' height='13' fill='%232F3829' transform='translate(0.5 0.619141)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+          }
+        }
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        background-color: #2F3829;
+        border: 1px solid transparent;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.15em;
+        text-align: center;
+        padding: 20px 76px;
+        box-sizing: border-box;
+        position: relative;
+        @include transition;
+        &::after {
+          content: '';
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1058_2832)'%3E%3Cpath d='M2.9375 0.619141V11.1816H13.5V0.619141H2.9375ZM12.4844 10.166H3.95312V1.63477H12.4844V10.166Z' fill='white'/%3E%3Cpath d='M1.51562 12.6035V8.13477V4.07227V3.05664H0.5V13.6191H11.0625V12.6035H10.0469H1.51562Z' fill='white'/%3E%3Cpath d='M6.41143 8.56217L9.40394 5.56963V7.72268H10.4196V3.83594H6.53285V4.85156H8.68587L5.69336 7.84408L6.41143 8.56217Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1058_2832'%3E%3Crect width='13' height='13' fill='white' transform='translate(0.5 0.619141)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: absolute;
+          top: 50%;
+          right: 22px;
+          transform: translateY(-50%);
+          @include transition;
+        }
+      }
+    }
+  }
+  @include mq() {
+    .sec-intro {
+      padding: 0 20px;
+      .heading {
+        font-size: 4rem;
+      }
+      .txt {
+        font-size: 2.4rem;
+      }
+      .renai {
+        &-group {
+          width: 100%;
+        }
+        &-heading {
+          font-size: 3.6rem;
+        }
+        &-list {
+          grid-template-columns: repeat(2, 1fr);
+          .item {
+            &-01 {
+              .logo {
+                width: calc(100% - 80px);
+              }
+            }
+            &-02 {
+              .logo {
+                width: calc(100% - 50px);
+              }
+            }
+            &-03 {
+              .logo {
+                width: calc(100% - 40px);
+              }
+            }
+            &-04 {
+              .logo {
+                width: calc(100% - 60px);
+              }
+            }
+          }
+          .title {
+            font-size: 2.6rem;
+          }
+          .text {
+            font-size: 1.8rem;
+          }
+        }
+      }
+      .renai-button {
+        width: calc(100% - 30px);
+        font-size: 2.4rem;
+        padding: 20px 40px;
+        &::after {
+          right: 15px;
+        }
+      }
+    } 
+  }
+
+  // ______________________________________
+  // .sec-philosophy
+  // ______________________________________
+  .sec-philosophy {
+    padding-top: 33.3rem;
+    padding-bottom: 35.7rem;
+    .heading {
+      font-size: 3.2rem;
+      font-weight: 400;
+      line-height: 1.8;
+      letter-spacing: 0.07em;
+      color: #25381C;
+      text-align: center;
+    }
+  }
+  @include mq() {
+    .sec-philosophy {
+      .heading {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  // ______________________________________
+  // .sec-renai-grand
+  // ______________________________________
+  .sec-renai-grand {
+    position: relative;
+    padding-top: 17.5rem;
+    padding-bottom: 21rem;
+    .bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: #232323;
+      mix-blend-mode: multiply;
+    }
+    .logo {
+      width: 238px;
+      margin: 0 auto 6.5rem;
+    }
+    .heading {
+      font-size: 3.2rem;
+      font-weight: 400;
+      line-height: 1.9;
+      letter-spacing: 0.07em;
+      color: #F7FAF6;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .description {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.2;
+      letter-spacing: 0.12em;
+      color: #F7FAF6;
+      text-align: center;
+      margin-bottom: 10.6rem;
+    }
+    .list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-wrap {
+        width: 74.6rem;
+        margin: 0 auto;
+        border: 1px solid #FFFFFF;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,0.15);
+        padding: 4.3rem 4.3rem 3.8rem 4.3rem;
+        .title {
+          font-size: 2.4rem;
+          font-weight: 400;
+          line-height: 1.9;
+          letter-spacing: 0.07em;
+          color: #F7FAF6;
+          text-align: center;
+          margin-bottom: 3.7rem;
+        }
+      }
+      .item {
+        &:nth-child(2) {
+          margin: 0 -1.7rem;
+        }
+        width: 23rem;
+        height: 23rem;
+        border-radius: 50%;
+        background-color: rgba(217, 217, 217, 0.2);
+        box-shadow: rgba(0, 0, 0, 0.25) 5px 4px 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .txt {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2;
+        letter-spacing: 0.11em;
+        color: #F7FAF6;
+        text-align: center;
+        opacity: 1;
+      }
+    }
+  }
+  @include mq() {
+    .sec-renai-grand {
+      padding-left: 20px;
+      padding-right: 20px;
+      .heading {
+        font-size: 4rem;
+      }
+      .description {
+        font-size: 2.4rem;
+      }
+      .list {
+        &-wrap {
+          width: 100%;
+          padding: 2.5rem;
+          .title {
+            font-size: 3rem;
+          }
+        }
+        .item {
+          width: 21rem;
+          height: 21rem;
+        }
+      }
+    } 
+  }
+
+  // ______________________________________
+  // .sec-real-estate
+  // ______________________________________
+  .sec-real-estate {
+    height: 100vh;
+    padding-top: 18.3rem;
+    .logo {
+      width: 273px;
+      margin: 0 auto 5.3rem;
+    }
+    .description {
+      width: 37.5rem;
+      margin: 0 auto 6.5rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2;
+      letter-spacing: 0.07em;
+      color: #25381C;
+      text-align: center;
+    }
+    .gallery {
+      width: 89.5rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3.2rem;
+      .image {
+        margin-bottom: 0.8rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 11px 8px 40px;
+        img {
+          border-radius: 4px;
+        }
+      }
+      .text {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 1.3;
+        letter-spacing: 0.02em;
+        color: #25381C;
+      }
+    }
+  }
+  @include mq() {
+    .sec-real-estate {
+      height: auto;
+      padding-top: 100px;
+      padding-left: 20px;
+      padding-right: 20px;
+      .logo {
+        width: 208px;
+        margin: 0 auto 5.3rem;
+      }
+      .description {
+        width: auto;
+        font-size: 2.4rem;
+      }
+      .gallery {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.8rem;
+        .image {
+          margin-bottom: 1rem;
+        }
+        .text {
+          font-size: 2rem;
+        }
+      }
+    } 
+  }
+
+  // ______________________________________
+  // .sec-arvest
+  // ______________________________________
+  .sec-arvest {
+    height: 100vh;
+    padding-top: 20rem;
+    .logo {
+      width: 273px;
+      margin: 0 auto 5.3rem;
+    }
+    .info {
+      width: 37.5rem;
+      margin: 0 auto 5.3rem;
+    }
+    .heading {
+      font-size: 2.2rem;
+      font-weight: 400;
+      line-height: 1.6;
+      letter-spacing: 0.07em;
+      color: #25381C;
+      text-align: center;
+      margin-bottom: 2.4rem;
+    }
+    .description {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2;
+      letter-spacing: 0.07em;
+      color: #25381C;
+      text-align: center;
+    }
+    .image {
+      width: 43.9rem;
+      margin: 0 auto;
+    }
+  }
+  @include mq() {
+    .sec-arvest {
+      height: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      .info {
+        width: 100%;
+      }
+      .logo {
+        width: 208px;
+      }
+      .heading {
+        font-size: 3.6rem;
+      }
+      .description {
+        font-size: 2.4rem;
+      }
+      .image {
+        width: 100%;
+      }
+    } 
+  }
+
+  // ______________________________________
+  // .sec-corporation
+  // ______________________________________
+  .sec-corporation {
+    padding-top: 12.3rem;
+    padding-bottom: 26.4rem;
+    .logo {
+      width: 305px;
+      margin: 0 auto 5.3rem;
+    }
+    .info {
+      width: 49.5rem;
+      margin: 0 auto 5.4rem;
+    }
+    .heading {
+      font-size: 2.2rem;
+      font-weight: 400;
+      line-height: 1.6;
+      letter-spacing: 0.07em;
+      color: #25381C;
+      text-align: center;
+      margin-bottom: 2.4rem;
+    }
+    .description {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2;
+      letter-spacing: 0.07em;
+      color: #25381C;
+      text-align: center;
+    }
+    .image {
+      width: 61.9rem;
+      margin: 0 auto;
+    }
+  }
+  @include mq() {
+    .sec-corporation {
+      padding: 100px 20px 132px 20px;
+      .logo {
+        width: 208px;
+      }
+      .info {
+        width: 100%;
+      }
+      .heading {
+        font-size: 3.6rem;
+      }
+      .description {
+        font-size: 2.4rem;
+      }
+      .image {
+        width: 100%;
+      }
+    }
+  }
+
+  // ______________________________________
+  // pageBrand ___end
+}
