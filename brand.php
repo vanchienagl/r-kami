@@ -45,7 +45,9 @@ include(dirname(__FILE__) . '/inc/head.php');
     </div>
     
     <div class="js_com_mv com-mv">
-      <img class="img" src="<?php echo h($path_img); ?>/brand/img_mv.jpg" alt="総合地所の最上級シリーズ">
+      <figure class="image">
+        <img src="<?php echo h($path_img); ?>/brand/img_mv.jpg" alt="総合地所の最上級シリーズ">
+      </figure>
       <div class="content">
         <p class="f-zen title">BRAND</p>
         <h2 class="f-shippori heading">総合地所の最上級シリーズ<br>RENAI GRAND</h2>
@@ -117,13 +119,13 @@ include(dirname(__FILE__) . '/inc/head.php');
       <div class="list-wrap">
         <p class="f-shippori title m_down">ルネグランシリーズの条件</p>
         <ul class="list">
-          <li class="f-shippori item m_down">
+          <li class="f-shippori item m_left">
             <p class="txt">都市に近く、<br>永く寛ぎの時を刻む<br>土地であること</p>
           </li>
-          <li class="f-shippori item m_down">
+          <li class="f-shippori item m_left">
             <p class="txt">この先を見据え<br>「新しさ」をいち早く<br>導入している<br>邸宅であること</p>
           </li>
-          <li class="f-shippori item m_down">
+          <li class="f-shippori item m_left">
             <p class="txt">家族が誇れる<br>普遍的な品格を備えた<br>住まいであること</p>
           </li>
         </ul>

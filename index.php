@@ -80,7 +80,7 @@ include(dirname(__FILE__) . '/inc/head.php');
       </figure>
     </section>
 
-    <div class="bg-sec-p-wrap" id="js_sec_p_wrap">
+    <div class="sec-p-wrap" id="js_sec_p_wrap">
       <div class="bg-sec-p" id="js_bg_sec_pages">
         <div class="bg-page bg-page-top">
           <img loading="lazy" class="_sp" src="<?php echo h($path_img); ?>/top/bg_intro_1.jpg" alt="譲れない正統。">

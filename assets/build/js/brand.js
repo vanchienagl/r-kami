@@ -2,7 +2,8 @@
 
 // ____________________________________________________________________________
 // ____________________________________________________________________________
-// function
+// Hamburger Menu Image Active
 $(function () {
-  console.log('brand.js');
+  const activeImage = document.querySelector('#js_hamburger_menu .image img.is-brand');
+  activeImage.classList.add("active");
 });

@@ -2,6 +2,14 @@
 
 // ____________________________________________________________________________
 // ____________________________________________________________________________
+// Hamburger Menu Image Active
+$(function () {
+  const activeImage = document.querySelector('#js_hamburger_menu .image img.is-top');
+  activeImage.classList.add("active");
+});
+
+// ____________________________________________________________________________
+// ____________________________________________________________________________
 // Load Fixed Menu Pages
 const loadFixedMenuPages = (() => {
   document.addEventListener("DOMContentLoaded", () => {
@@ -29,8 +37,8 @@ const loadFixedMenuPages = (() => {
         scrollTrigger: {
           invalidateOnRefresh: true,
           trigger: secPagesWrap,
-          start: 'top-=100 top',
-          end: "bottom 95%",
+          start: 'top top',
+          end: "bottom bottom",
           toggleClass: { targets: fixedMenuPages, className: "show" },
           // markers: true,
         },

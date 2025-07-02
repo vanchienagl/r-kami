@@ -2,10 +2,30 @@
 
 #pageBrand {
   // ______________________________________
+  // hamburger menu active
+  // ______________________________________
+  .hamburger-menu {
+    .menu-item{
+      &.is-brand {
+        .menu-link {
+          .en, .ja {
+            color: #caad1a;
+          }
+        }
+      }
+    }
+  }
+
+  // ______________________________________
   // .com-mv
   // ______________________________________
   .com-mv {
     margin-bottom: 16.8rem;
+  }
+  @include mq() {
+    .com-mv {
+      margin-bottom: 12rem;
+    } 
   }
 
   // ______________________________________
@@ -309,8 +329,12 @@
         }
       }
       .item {
+        &:nth-child(1) {
+          transition-delay: 0.3s;
+        }
         &:nth-child(2) {
           margin: 0 -1.7rem;
+          transition-delay: 0.2s;
         }
         width: 23rem;
         height: 23rem;

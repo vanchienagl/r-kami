@@ -153,6 +153,42 @@ var navFunc = (function () {
   });
 })();
 
+
+// ____________________________________________________________________________
+// ____________________________________________________________________________
+// ____________________________________________________________________________
+// Hamburger Menu Image
+$(function () {
+  const menuItems = document.querySelectorAll('#js_hamburger_menu .menu-item');
+  const allImages = document.querySelectorAll('#js_hamburger_menu .image img');
+  const defaultImage = document.querySelector('#js_hamburger_menu .image img.is-top');
+
+  // When hover on menu-item
+  menuItems.forEach(menuItem => {
+    menuItem.addEventListener('mouseenter', () => {
+      const matchedClass = Array.from(menuItem.classList).find(c => c.startsWith('is-'));
+
+      // Remove all class active
+      allImages.forEach(img => img.classList.remove('active'));
+
+      const targetImage = document.querySelector(`#js_hamburger_menu .image img.${matchedClass}`);
+      if (targetImage) {
+        targetImage.classList.add('active');
+      }
+    });
+  });
+
+  // When leave menu-box
+  const menuWrapper = document.querySelector('#js_hamburger_menu .menus');
+  menuWrapper.addEventListener('mouseleave', () => {
+    allImages.forEach(img => img.classList.remove('active'));
+    if (defaultImage) {
+      defaultImage.classList.add('active');
+    }
+  });
+});
+
+
 // ____________________________________________________________________________
 // ____________________________________________________________________________
 // ____________________________________________________________________________
@@ -279,7 +315,7 @@ const loadFixedMenuSubPage = (() => {
           endTrigger: secHideMenu,
           end: "bottom top",
           toggleClass: { targets: fixedMenuPages, className: "show" },
-          markers: true,
+          // markers: true,
         },
       });
     }

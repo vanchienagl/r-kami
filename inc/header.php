@@ -46,18 +46,28 @@
     </div>
     <div class="content">
       <div class="image">
-        <img src="<?php echo h($path_img); ?>/common/img_hmenu_top.jpg" alt="TOP">
+        <img class="is-top" src="<?php echo h($path_img); ?>/common/img_hmenu_top.jpg" alt="TOP">
+        <img class="is-location" src="<?php echo h($path_img); ?>/common/img_hmenu_location.jpg" alt="LOCATION">
+        <img class="is-access" src="<?php echo h($path_img); ?>/common/img_hmenu_access.jpg" alt="ACCESS">
+        <img class="is-design" src="<?php echo h($path_img); ?>/common/img_hmenu_design.jpg" alt="DESIGN">
+        <img class="is-plan" src="<?php echo h($path_img); ?>/common/img_hmenu_plan.jpg" alt="PLAN">
+        <img class="is-quality" src="<?php echo h($path_img); ?>/common/img_hmenu_quality.jpg" alt="QUALITY">
+        <img class="is-safety" src="<?php echo h($path_img); ?>/common/img_hmenu_safety.jpg" alt="SAFETY">
+        <img class="is-brand" src="<?php echo h($path_img); ?>/common/img_hmenu_brand.jpg" alt="BRAND">
+        <img class="is-limited" src="<?php echo h($path_img); ?>/common/img_hmenu_limited.jpg" alt="LIMITED">
+        <img class="is-outline" src="<?php echo h($path_img); ?>/common/img_hmenu_outline.jpg" alt="OUTLINE">
+        <img class="is-map" src="<?php echo h($path_img); ?>/common/img_hmenu_map.jpg" alt="MAP">
       </div>
       <div class="menus">
         <div class="menu-box menu-box-01">
           <div class="menu-item is-top">
-            <a href="#" class="menu-link">
+            <a href="<?php echo h($path); ?>/" class="menu-link">
               <span class="en f-cormorant">TOP</span>
               <span class="ja">トップ</span>
             </a>
           </div>
           <div class="menu-item is-location">
-            <a href="#" class="menu-link">
+            <a href="<?php echo h($path); ?>/location.php" class="menu-link">
               <span class="en f-cormorant">LOCATION</span>
               <span class="ja">ロケーション</span>
             </a>
@@ -67,8 +77,8 @@
               <li class="item"><a href="#">高い都市機能</a></li>
             </ul>
           </div>
-          <div class="menu-item">
-            <a href="#" class="menu-link">
+          <div class="menu-item is-access">
+            <a href="<?php echo h($path); ?>/access.php" class="menu-link">
               <span class="en f-cormorant">ACCESS</span>
               <span class="ja">アクセス</span>
             </a>
@@ -77,8 +87,8 @@
               <li class="item"><a href="#">中央線ライフ</a></li>
             </ul>
           </div>
-          <div class="menu-item">
-            <a href="#" class="menu-link">
+          <div class="menu-item is-design">
+            <a href="<?php echo h($path); ?>/design.php" class="menu-link">
               <span class="en f-cormorant">DESIGN</span>
               <span class="ja">デザイン</span>
             </a>
@@ -87,8 +97,8 @@
               <li class="item"><a href="#">風格ある外観</a></li>
             </ul>
           </div>
-          <div class="menu-item">
-            <a href="#" class="menu-link">
+          <div class="menu-item is-plan">
+            <a href="<?php echo h($path); ?>/plan.php" class="menu-link">
               <span class="en f-cormorant">PLAN</span>
               <span class="ja">プラン</span>
             </a>
@@ -101,8 +111,8 @@
         </div>
 
         <div class="menu-box menu-box-02">
-          <div class="menu-item">
-            <a href="#" class="menu-link">
+          <div class="menu-item is-quality">
+            <a href="<?php echo h($path); ?>/quality.php" class="menu-link">
               <span class="en f-cormorant">QUALITY</span>
               <span class="ja">設備・仕様</span>
             </a>
@@ -111,8 +121,8 @@
               <li class="item"><a href="#">設備・仕様</a></li>
             </ul>
           </div>
-          <div class="menu-item">
-            <a href="#" class="menu-link">
+          <div class="menu-item is-safety">
+            <a href="<?php echo h($path); ?>/safety.php" class="menu-link">
               <span class="en f-cormorant">SAFETY</span>
               <span class="ja">構造</span>
             </a>
@@ -122,26 +132,26 @@
               <li class="item"><a href="#">構造</a></li>
             </ul>
           </div>
-          <div class="menu-item">
-            <a href="#" class="menu-link">
+          <div class="menu-item is-brand">
+            <a href="<?php echo h($path); ?>/brand.php" class="menu-link">
               <span class="en f-cormorant">BRAND</span>
               <span class="ja">ブランド</span>
             </a>
           </div>
-          <div class="menu-item">
-            <a href="#" class="menu-link">
+          <div class="menu-item is-limited">
+            <a href="<?php echo h($path); ?>/limited.php" class="menu-link">
               <span class="en f-cormorant">LIMITED</span>
               <span class="ja is-long">物件エントリー限定サイト</span>
             </a>
           </div>
-          <div class="menu-item">
-            <a href="#" class="menu-link">
+          <div class="menu-item is-outline">
+            <a href="<?php echo h($path); ?>/outline.php" class="menu-link">
               <span class="en f-cormorant">OUTLINE</span>
               <span class="ja">物件概要</span>
             </a>
           </div>
-          <div class="menu-item">
-            <a href="#" class="menu-link">
+          <div class="menu-item is-map">
+            <a href="<?php echo h($path); ?>/map.php" class="menu-link">
               <span class="en f-cormorant">MAP</span>
               <span class="ja">現地案内図</span>
             </a>
