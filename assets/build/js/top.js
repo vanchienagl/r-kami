@@ -37,7 +37,7 @@ const loadFixedMenuPages = (() => {
         scrollTrigger: {
           invalidateOnRefresh: true,
           trigger: secPagesWrap,
-          start: 'top top',
+          start: 'top 50%',
           end: "bottom bottom",
           toggleClass: { targets: fixedMenuPages, className: "show" },
           // markers: true,
