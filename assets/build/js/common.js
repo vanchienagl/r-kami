@@ -342,3 +342,27 @@ const loadFixedMenuSubPage = (() => {
     window.addEventListener('load', updateActiveMenu);
   });
 })();
+
+// ____________________________________________________________________________
+// ____________________________________________________________________________
+// js_text_front Common Intro Subpage
+$(function () {
+  const comIntro = document.querySelector(".js_com_intro");
+  const textFront = document.querySelectorAll('.js_text_front');
+  
+  if (comIntro) {
+    for (let i = 0; i < textFront.length; i++) {
+      gsap.to(textFront[i], {
+        clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0% 100%)',
+        scrollTrigger: {
+          invalidateOnRefresh: true,
+          trigger: textFront[i],
+          start: 'top 80%',
+          end: 'top 30%',
+          scrub: 1,
+          // markers: true,
+        }
+      });
+    }
+  }
+});

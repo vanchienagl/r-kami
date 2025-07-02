@@ -144,13 +144,13 @@ button.nav-btn.active .text {
   opacity: 0;
   visibility: hidden;
   @include transition;
+  z-index: 4;
   &.active {
     opacity: 1;
     visibility: visible;
-    z-index: 4;
   }
   .wrap {
-    padding: 1.6rem 9.7rem 7.5rem 0;
+    padding: 1.7rem 9.7rem 7.5rem 0;
     position: relative;
   }
   .btn-close {
@@ -166,9 +166,11 @@ button.nav-btn.active .text {
     margin-left: 3rem;
   }
   .content {
+    max-width: 1300px;
+    width: 100%;
+    margin: 5.2rem auto 0;
     @include flex_b_s;
     gap: 14.3rem;
-    margin-top: 5.2rem;
   }
   .image {
     width: 41.8rem;
@@ -186,6 +188,7 @@ button.nav-btn.active .text {
       opacity: 0;
       visibility: hidden;
       @include transition;
+      pointer-events: none;
     }
   }
   .menus {

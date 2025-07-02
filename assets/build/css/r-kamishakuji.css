@@ -963,14 +963,14 @@ button.nav-btn.active .text {
   visibility: hidden;
   -webkit-transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
   transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
+  z-index: 4;
 }
 .hamburger-menu.active {
   opacity: 1;
   visibility: visible;
-  z-index: 4;
 }
 .hamburger-menu .wrap {
-  padding: 1.6rem 9.7rem 7.5rem 0;
+  padding: 1.7rem 9.7rem 7.5rem 0;
   position: relative;
 }
 .hamburger-menu .btn-close {
@@ -986,6 +986,9 @@ button.nav-btn.active .text {
   margin-left: 3rem;
 }
 .hamburger-menu .content {
+  max-width: 1300px;
+  width: 100%;
+  margin: 5.2rem auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -998,7 +1001,6 @@ button.nav-btn.active .text {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 14.3rem;
-  margin-top: 5.2rem;
 }
 .hamburger-menu .image {
   width: 41.8rem;
@@ -1019,6 +1021,7 @@ button.nav-btn.active .text {
   visibility: hidden;
   -webkit-transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
   transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
+  pointer-events: none;
 }
 .hamburger-menu .image img.active {
   opacity: 1;
@@ -1865,6 +1868,15 @@ figure.m_scale.m_scale_on img {
   -webkit-transform: translateY(-50%) translateX(0);
           transform: translateY(-50%) translateX(0);
 }
+.com-fixed-menu-subpage.is-white .menu .item.active .dot {
+  background-color: #F7FAF6;
+}
+.com-fixed-menu-subpage.is-white .menu .item.active .text {
+  color: #F7FAF6;
+}
+.com-fixed-menu-subpage.is-white .menu .text {
+  color: rgba(247, 250, 246, 0.3);
+}
 .com-fixed-menu-subpage .menu .item.active .dot {
   background-color: #25381C;
 }
@@ -1885,10 +1897,15 @@ figure.m_scale.m_scale_on img {
 }
 .com-fixed-menu-subpage .menu .dot {
   display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
+  width: 4px;
+  height: 4px;
   background-color: transparent;
+  -webkit-transform: rotate(45deg) scale(1.001);
+          transform: rotate(45deg) scale(1.001);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   -webkit-transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
   transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
 }
@@ -1921,6 +1938,51 @@ figure.m_scale.m_scale_on img {
     background-color: rgba(37, 56, 28, 0.3);
   }
 }
+.com-intro {
+  margin-bottom: 35rem;
+}
+.com-intro .heading {
+  font-size: 11rem;
+  font-weight: 400;
+  line-height: 1.26;
+  letter-spacing: 0;
+  color: rgb(37, 56, 28);
+  opacity: 0.3;
+  margin: 0 0 3.5rem 4.5rem;
+}
+.com-intro .content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.com-intro .text {
+  font-family: "Shippori Mincho", serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.13em;
+  text-align: center;
+}
+.com-intro .text-wrap:not(:first-of-type) {
+  margin-top: 4.5rem;
+}
+.com-intro .text-box {
+  position: relative;
+}
+.com-intro .text-front {
+  color: #25381C;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.com-intro .text-back {
+  color: #fff;
+}
+
 #pageTop .header {
   opacity: 0;
   visibility: hidden;
@@ -3317,5 +3379,219 @@ figure.m_scale.m_scale_on img {
   #pageBrand .sec-corporation .image {
     width: 100%;
   }
+}
+
+#pageLocation .hamburger-menu .menu-item.is-location .menu-link .en, #pageLocation .hamburger-menu .menu-item.is-location .menu-link .ja {
+  color: #caad1a;
+}
+#pageLocation .com-mv .image::before {
+  background-color: rgba(37, 56, 28, 0.4);
+}
+#pageLocation .c-heading {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+}
+#pageLocation .c-heading.is-02 .txt-ja {
+  color: #25381C;
+}
+#pageLocation .c-heading.is-02 .txt-en {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#25381C), to(#FFFFFF));
+  background-image: linear-gradient(to bottom, #25381C 0%, #FFFFFF 100%);
+}
+#pageLocation .c-heading .txt-ja {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #F7FAF6;
+  line-height: 2;
+  letter-spacing: 0.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#pageLocation .c-heading .txt-en {
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 1.26;
+  letter-spacing: 0.05em;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#25381C));
+  background-image: linear-gradient(to bottom, #FFFFFF 0%, #25381C 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+#pageLocation .c-box-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 8rem;
+}
+#pageLocation .c-box-content.is-green .head,
+#pageLocation .c-box-content.is-green .brief {
+  color: #25381C;
+}
+#pageLocation .c-box-content .head {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.07em;
+  color: #F7FAF6;
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+#pageLocation .c-box-content .brief {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.12em;
+  color: #F7FAF6;
+  text-align: center;
+}
+#pageLocation .c-gallery {
+  width: 85rem;
+  margin: 0 auto 13.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4.2rem 2.6rem;
+}
+#pageLocation .c-gallery-02 {
+  margin-bottom: 11.1rem;
+}
+#pageLocation .c-gallery-03 {
+  margin-bottom: 0;
+}
+#pageLocation .c-gallery .item {
+  width: 26.6rem;
+}
+#pageLocation .c-gallery .item-full {
+  width: 100%;
+}
+#pageLocation .c-gallery .image img {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#pageLocation .c-gallery .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 1.7rem;
+}
+#pageLocation .c-gallery span {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #25381C;
+}
+#pageLocation .c-gallery .value {
+  font-size: 1.1rem;
+}
+#pageLocation .sec-position {
+  background-color: #2F3829;
+  padding-top: 13.4rem;
+  padding-bottom: 26.4rem;
+  position: relative;
+}
+#pageLocation .sec-position .image-01 {
+  width: 43.6rem;
+  height: 43.6rem;
+  position: absolute;
+  top: 4.8rem;
+  right: 1.7rem;
+}
+#pageLocation .sec-position .heading {
+  margin-bottom: 4.4rem;
+}
+#pageLocation .sec-position .image-02 {
+  width: 83.2rem;
+  margin: 0 auto 13.5rem;
+}
+#pageLocation .sec-position .gallery {
+  width: 67.3rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2.8rem 3.3rem;
+}
+#pageLocation .sec-position .gallery .item-01 {
+  width: 44.1rem;
+}
+#pageLocation .sec-position .gallery .item-02 {
+  width: 19.9rem;
+}
+#pageLocation .sec-position .gallery .item-03 {
+  width: 26.9rem;
+}
+#pageLocation .sec-position .gallery .item-04 {
+  width: 37.1rem;
+}
+#pageLocation .sec-position .gallery .caption {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #F7FAF6;
+  text-align: right;
+  margin-top: 1.4rem;
+}
+#pageLocation .sec-part {
+  padding-top: 29.2rem;
+  position: relative;
+}
+#pageLocation .sec-part .image-01 {
+  width: 43.7rem;
+  height: 43.7rem;
+  position: absolute;
+  top: 11rem;
+  right: 1.8rem;
+}
+#pageLocation .sec-part .heading {
+  margin-bottom: 8.4rem;
+}
+#pageLocation .sec-part .image-02 {
+  width: 85.4rem;
+  margin: 0 auto;
+  mix-blend-mode: multiply;
+}
+#pageLocation .sec-convenience {
+  padding-top: 36.3rem;
+  padding-bottom: 25rem;
+  position: relative;
+}
+#pageLocation .sec-convenience .image-01 {
+  width: 43.7rem;
+  height: 43.7rem;
+  position: absolute;
+  top: -18.1rem;
+  right: 1.8rem;
+}
+#pageLocation .sec-convenience .heading {
+  margin-bottom: 8.4rem;
 }
 /*# sourceMappingURL=r-kamishakuji.css.map */

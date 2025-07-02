@@ -23,7 +23,7 @@ include(dirname(__FILE__) . '/inc/head.php');
 
     <div class="js_com_fixed_menu_subpage com-fixed-menu-subpage">
       <ul class="menu">
-        <li class="item active">
+        <li class="item">
           <a href="#sec_real_estate" class="link">
             <span class="dot"></span>
             <span class="_pc text">総合地所</span>

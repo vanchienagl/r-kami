@@ -641,6 +641,23 @@ figure.m_scale {
     visibility: visible;
     transform: translateY(-50%) translateX(0);
   }
+  &.is-white {
+    .menu {
+      .item {
+        &.active {
+          .dot {
+            background-color: #F7FAF6;
+          }
+          .text {
+            color: #F7FAF6;
+          }
+        }
+      }
+      .text {
+        color: rgb(247, 250, 246, 0.3);
+      }
+    }
+  }
   position: fixed;
   top: 50%;
   transform: translateY(-50%) translateX(-20px);
@@ -671,10 +688,12 @@ figure.m_scale {
     }
     .dot {
       display: inline-block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
+      width: 4px;
+      height: 4px;
       background-color: transparent;
+      transform: rotate(45deg) scale(1.001);
+      backface-visibility: hidden;
+      transform-style: preserve-3d;
       @include transition;
     }
     .text {
@@ -708,6 +727,54 @@ figure.m_scale {
       .dot {
         background-color: rgba(37, 56, 28, 0.3);
       }
+    }
+  }
+}
+
+// ______________________________________
+// .com-intro
+// ______________________________________
+.com-intro {
+  margin-bottom: 35rem;
+  .heading {
+    font-size: 11rem;
+    font-weight: 400;
+    line-height: 1.26;
+    letter-spacing: 0;
+    color: rgb(37, 56, 28);
+    opacity: 0.3;
+    margin: 0 0 3.5rem 4.5rem;
+  }
+  .content {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .text {
+    font-family: "Shippori Mincho", serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.13em;
+    text-align: center;
+    &-wrap {
+      &:not(:first-of-type) {
+        margin-top: 4.5rem;
+      }
+    }
+    &-box {
+      position: relative;
+    }
+    &-front {
+      color: #25381C;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    &-back {
+      color: #fff;
     }
   }
 }

@@ -32,7 +32,7 @@
   <div class="com-bg bg">
     <img src="<?php echo h($path_img); ?>/common/bg_hamburger.png" alt="">
   </div>
-  <div class="com-wrap wrap">
+  <div class="wrap">
     <span class="btn-close" id="js_btn_close_h">
       <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="0.462891" width="26.215" height="0.655374" transform="rotate(45 0.462891 0)" fill="white" />
