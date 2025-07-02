@@ -180,11 +180,13 @@ $(function () {
 
   // When leave menu-box
   const menuWrapper = document.querySelector('#js_hamburger_menu .menus');
+  const path = window.location.pathname;
+  const segments = path.split('/');
+  const pageName = segments.pop().split('.')[0];
+  const activeImagePage = document.querySelector(`#js_hamburger_menu .image img.is-${pageName}`);
   menuWrapper.addEventListener('mouseleave', () => {
     allImages.forEach(img => img.classList.remove('active'));
-    if (defaultImage) {
-      defaultImage.classList.add('active');
-    }
+    activeImagePage.classList.add('active');
   });
 });
 
