@@ -86,14 +86,14 @@ include(dirname(__FILE__) . '/inc/head.php');
         <h2 class="f-shippori txt-ja">立地</h2>
         <p class="f-cormorant txt-en">POSITION</p>
       </div>
-      <div class="c-box-content">
+      <div class="com-box-content">
         <h3 class="f-shippori head m_down">駅徒歩5分であること。<br>駅徒歩5分だけではない贅</h3>
         <p class="f-shippori brief m_down">都心直結の地でありながら、駅徒歩5分。<br>この地の魅力はそれだけでなく、小学校近接の地であること。<br>そして、第一種低層住居専用地域であること。<br>近さだけでなく、穏やかさがある贅を。</p>
       </div>
       <figure class="image-02 m_down">
         <img src="<?php echo h($path_img); ?>/location/img_position_02.png" alt="image 02">
       </figure>
-      <div class="c-box-content">
+      <div class="com-box-content">
         <h3 class="f-shippori head m_down">第一種低層住居専用地域という、<br>邸宅地としての資質。</h3>
         <p class="f-shippori brief m_down">良好な住環境を保護するために様々な制限が定められた、<br>第一種低層住居専用地域内の落ち着き。<br>邸宅地としての品格を感じる空気が流れています。</p>
       </div>
@@ -131,7 +131,7 @@ include(dirname(__FILE__) . '/inc/head.php');
         <h2 class="f-shippori txt-ja">公園</h2>
         <p class="f-cormorant txt-en">PART</p>
       </div>
-      <div class="c-box-content is-green">
+      <div class="com-box-content is-green">
         <h3 class="f-shippori head m_down">大型公園を身近に、<br>瑞々しい緑に包まれる場所。</h3>
         <p class="f-shippori brief m_down">石神井公園や善福寺公園、武蔵関公園をはじめ、<br>少し足を伸ばせば大型公園を気軽に利用できる潤いある地。<br>身近に揃う大小様々な公園など、多彩な緑景に出会えます。</p>
       </div>
@@ -184,7 +184,7 @@ include(dirname(__FILE__) . '/inc/head.php');
         </div>
       </div>
 
-      <div class="c-box-content is-green">
+      <div class="com-box-content is-green">
         <h3 class="f-shippori head m_down">小中学校隣接という、文教の気配。</h3>
         <p class="f-shippori brief m_down">駅徒歩5分の躍動的な地でありながら、<br>東側に小学校、北側に中学校が隣接する地。<br>広大な敷地が広がる開放感と、文教の気配を。</p>
       </div>
@@ -223,7 +223,7 @@ include(dirname(__FILE__) . '/inc/head.php');
         <h2 class="f-shippori txt-ja">生活利便施設</h2>
         <p class="f-cormorant txt-en">LIFE CONVENIENCE</p>
       </div>
-      <div class="c-box-content is-green">
+      <div class="com-box-content is-green">
         <h3 class="f-shippori head m_down">駅前を中心に高い都市機能を誇る場所。</h3>
         <p class="f-shippori brief m_down">スーパーマーケットなどの利便施設をはじめ、<br>医療機関や教育機関、銀行など高い都市機能を誇る地。<br>利便性の高い豊かな日々がはじまります。</p>
       </div>

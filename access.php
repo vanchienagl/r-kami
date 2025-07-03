@@ -71,7 +71,108 @@ include(dirname(__FILE__) . '/inc/head.php');
       </div>
     </div>
 
+    <section id="sec_connected" class="js_sec_page sec-connected">
+      <figure class="image-01 m_down">
+        <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_01.jpg" alt="image 01">
+      </figure>
 
+      <figure class="image-02 m_down">
+        <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_02.png" alt="image 02">
+      </figure>
+
+      <div class="com-box-content">
+        <h3 class="f-shippori head m_down">JR山手線直結、新宿エリアへも<br>ダイレクトの都心アクセス。</h3>
+        <p class="f-shippori brief m_down">徒歩5分の西武新宿線「上石神井」駅から、<br>JR山手線「高田馬場」駅へダイレクト。<br>新宿エリアへもスマートなアクセスをかなえます。</p>
+      </div>
+
+      <figure class="image-03 m_down">
+        <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_03.png" alt="image 03">
+      </figure>
+
+      <div class="gallery">
+        <div class="gallery-list">
+          <div class="item m_down">
+            <div class="heading">
+              <p class="name">高田馬場</p>
+              <div class="info">
+                <p class="time">（日中時13分）</p>
+                <p class="minute">2駅直通14分</p>
+              </div>
+            </div>
+            <figure class="image">
+              <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_04.jpg" alt="「高田馬場」駅まで">
+              <figcaption class="caption">「高田馬場」駅まで</figcaption>
+            </figure>
+          </div>
+          <div class="item m_down">
+            <div class="heading">
+              <p class="name">大手町</p>
+              <div class="info">
+                <p class="time">（日中時33分）</p>
+                <p class="minute">30分</p>
+              </div>
+            </div>
+            <figure class="image">
+              <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_05.jpg" alt="「大手町」駅まで">
+              <figcaption class="caption">「大手町」駅まで</figcaption>
+            </figure>
+          </div>
+          <div class="item m_down">
+            <div class="heading">
+              <p class="name">新宿</p>
+              <div class="info">
+                <p class="time">（日中時26分）</p>
+                <p class="minute">23分</p>
+              </div>
+            </div>
+            <figure class="image">
+              <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_06.jpg" alt="「新宿」駅まで">
+              <figcaption class="caption">「新宿」駅まで</figcaption>
+            </figure>
+          </div>
+          <div class="item m_down">
+            <div class="heading">
+              <p class="name">池袋</p>
+              <div class="info">
+                <p class="time">（日中時23分）</p>
+                <p class="minute">24分</p>
+              </div>
+            </div>
+            <figure class="image">
+              <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_07.jpg" alt="「池袋」駅まで">
+              <figcaption class="caption">「池袋」駅まで</figcaption>
+            </figure>
+          </div>
+          <div class="item m_down">
+            <div class="heading">
+              <p class="name">東京</p>
+              <div class="info">
+                <p class="time">（日中時39分）</p>
+                <p class="minute">37分</p>
+              </div>
+            </div>
+            <figure class="image">
+              <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_08.jpg" alt="「東京」駅まで">
+              <figcaption class="caption">「東京」駅まで</figcaption>
+            </figure>
+          </div>
+          <div class="item m_down">
+            <div class="heading">
+              <p class="name">渋谷</p>
+              <div class="info">
+                <p class="time">（日中時32分）</p>
+                <p class="minute">30分</p>
+              </div>
+            </div>
+            <figure class="image">
+              <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_09.jpg" alt="「渋谷」駅まで">
+              <figcaption class="caption">「渋谷」駅まで</figcaption>
+            </figure>
+          </div>
+        </div>
+        <p class="gallery-note">※西武新宿線「上石神井」駅より「高田馬場」駅へ：西武新宿線急行利用「新宿」「池袋」「渋谷」へ：西武新宿線急行利用、「高田馬場」でJR山手線に乗り変え「大手町」駅へ：西武新宿線急行利用、「高田馬場」駅で東京メトロ東西線に乗り換え「東京」駅へ：西武新宿線急行利用、「高田馬場」駅で東京メトロ東西線に乗換、「大手町」駅で東京メトロ丸ノ内線に乗換</p>
+      </div>
+    </section>
     <!-- ____________________//content____________________ -->
   </main>
 

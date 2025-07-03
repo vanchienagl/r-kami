@@ -21,7 +21,52 @@
   // ______________________________________
   // .sec-connected
   // ______________________________________
-  .sec-connected {}
+  .sec-connected {
+    background-color: #2F3829;
+    padding-top: 17.9rem;
+    padding-bottom: 30.1rem;
+
+    .image-01 {
+      margin-bottom: 8.1rem;
+    }
+
+    .image-02 {
+      width: 55rem;
+      margin: 0 auto 7.75rem;
+    }
+
+    .image-03 {
+      width: 73rem;
+      margin: 0 auto 16.2rem;
+    }
+
+    .gallery {
+      width: 85rem;
+      margin: 0 auto 13.5rem;
+      &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3.9rem 2.6rem;
+        .heading {
+          display: flex;
+          justify-content: space-between;
+          gap: 1rem;
+        }
+        .name {
+          flex-shrink: 0;
+        }
+        .time {}
+        .minute {}
+        .image {
+          img {
+            border-radius: 4px;
+          }
+        }
+        .caption {}
+      }
+      &-note {}
+    }
+  }
 
   // ______________________________________
   // .sec-line-life

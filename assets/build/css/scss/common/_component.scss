@@ -568,8 +568,7 @@ figure.m_scale {
     }
   }
   .content {
-    width: 100%;
-    padding: 0 15rem;
+    width: 85rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -616,7 +615,7 @@ figure.m_scale {
     margin-top: 10rem;
     margin-bottom: 8rem;
     .content {
-      padding: 0 7rem;
+      width: calc(100% - 80px);
     }
     .image {
       width: 100%;
@@ -746,7 +745,7 @@ figure.m_scale {
     margin: 0 0 3.5rem 4.5rem;
   }
   .content {
-    width: fit-content;
+    width: 50rem;
     margin: 0 auto;
   }
   .text {
@@ -777,4 +776,50 @@ figure.m_scale {
       color: #fff;
     }
   }
+}
+@include mq() {
+  .com-intro {
+    .content {
+      width: calc(100% - 80px);
+    }
+  }
+}
+
+// ______________________________________
+// .com-box-content
+// ______________________________________
+.com-box-content {
+  &.is-green {
+    .head,
+    .brief {
+      color: #25381C;
+    }
+  }
+  width: 85rem;
+  margin: 0 auto 8rem;
+  .head {
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.07em;
+    color: #F7FAF6;
+    text-align: center;
+    margin-bottom: 3.6rem;
+  }
+  .brief {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.12em;
+    color: #F7FAF6;
+    text-align: center;
+  }
+}
+@include mq() {
+  .com-box-content {
+    width: 100%;
+    .brief {
+      font-size: 1.6rem;
+    }
+  } 
 }

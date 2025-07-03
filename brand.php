@@ -112,8 +112,10 @@ include(dirname(__FILE__) . '/inc/head.php');
       <figure class="logo m_down">
         <img loading="lazy" src="<?php echo h($path_img); ?>/brand/logo_renai_grand_01.png" alt="RENAI GRAND">
       </figure>
-      <h2 class="f-shippori heading m_down">「住む」を追求した<br>最上級レジデンス ルネグランとは</h2>
-      <p class="f-shippori description m_down">総合地所として、家族にとって真の寛ぎとは何かを追求し、<br>立地選定、邸宅としてのグレードや品格、<br>先進機能の導入など細部まで追求した最上級ブランド。</p>
+      <div class="content">
+        <h2 class="f-shippori heading m_down">「住む」を追求した<br>最上級レジデンス ルネグランとは</h2>
+        <p class="f-shippori description m_down">総合地所として、家族にとって真の寛ぎとは何かを追求し、<br>立地選定、邸宅としてのグレードや品格、<br>先進機能の導入など細部まで追求した最上級ブランド。</p>
+      </div>
       <div class="list-wrap">
         <p class="f-shippori title m_down">ルネグランシリーズの条件</p>
         <ul class="list">

@@ -29,7 +29,7 @@
         background-image: linear-gradient( to bottom, #25381C 0%, #FFFFFF 100%);
       }
     }
-    width: fit-content;
+    width: max-content;
     margin: 0 auto;
     position: relative;
     .txt-ja {
@@ -61,44 +61,6 @@
         font-size: 2rem;
       }
     }
-  }
-
-  // ______________________________________
-  // .c-box-content
-  // ______________________________________
-  .c-box-content {
-    &.is-green {
-      .head,
-      .brief {
-        color: #25381C;
-      }
-    }
-    width: fit-content;
-    margin: 0 auto 8rem;
-    .head {
-      font-size: 3.2rem;
-      font-weight: 400;
-      line-height: 1.8;
-      letter-spacing: 0.07em;
-      color: #F7FAF6;
-      text-align: center;
-      margin-bottom: 3.6rem;
-    }
-    .brief {
-      font-size: 1.4rem;
-      font-weight: 400;
-      line-height: 2;
-      letter-spacing: 0.12em;
-      color: #F7FAF6;
-      text-align: center;
-    }
-  }
-  @include mq() {
-    .c-box-content {
-      .brief {
-        font-size: 1.6rem;
-      }
-    } 
   }
 
   // ______________________________________
