@@ -17,14 +17,19 @@
   }
 
   // ______________________________________
-  // .com-mv
+  // .com-mv-custom
   // ______________________________________
-  .com-mv {
+  .com-mv-custom {
     margin-bottom: 10.9rem;
+    .image {
+      &::before {
+        background-color: rgba(37, 56, 28, .3);
+      }
+    }
   }
   @include mq() {
-    .com-mv {
-      margin-bottom: 12rem;
+    .com-mv-custom {
+      margin-bottom: 7rem;
     } 
   }
 

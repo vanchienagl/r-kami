@@ -15,7 +15,7 @@ include(dirname(__FILE__) . '/inc/head.php');
    
   <main id="mainWrap" class="active">
     <!-- ____________________content____________________ -->
-     <div class="com-bg-main-wrap">
+    <div class="com-bg-main-wrap">
       <div class="js_com_bg_main com-bg-main com-bg-main-02"></div>
     </div>
 

@@ -1806,7 +1806,7 @@ figure.m_scale.m_scale_on img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(37, 56, 28, 0.3);
+  background-color: rgba(37, 56, 28, 0.4);
 }
 .com-mv .image img {
   width: 100%;
@@ -2852,12 +2852,15 @@ figure.m_scale.m_scale_on img {
 #pageBrand .hamburger-menu .menu-item.is-brand .menu-link .en, #pageBrand .hamburger-menu .menu-item.is-brand .menu-link .ja {
   color: #caad1a;
 }
-#pageBrand .com-mv {
+#pageBrand .com-mv-custom {
   margin-bottom: 10.9rem;
 }
+#pageBrand .com-mv-custom .image::before {
+  background-color: rgba(37, 56, 28, 0.3);
+}
 @media screen and (max-width: 750px) {
-  #pageBrand .com-mv {
-    margin-bottom: 12rem;
+  #pageBrand .com-mv-custom {
+    margin-bottom: 7rem;
   }
 }
 #pageBrand .sec-intro .heading {
@@ -3385,9 +3388,6 @@ figure.m_scale.m_scale_on img {
 
 #pageLocation .hamburger-menu .menu-item.is-location .menu-link .en, #pageLocation .hamburger-menu .menu-item.is-location .menu-link .ja {
   color: #caad1a;
-}
-#pageLocation .com-mv .image::before {
-  background-color: rgba(37, 56, 28, 0.4);
 }
 #pageLocation .c-heading {
   width: -webkit-fit-content;

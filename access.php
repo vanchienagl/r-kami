@@ -14,6 +14,64 @@ include(dirname(__FILE__) . '/inc/head.php');
 
   <main id="mainWrap">
     <!-- ____________________content____________________ -->
+    <div class="com-bg-main-wrap">
+      <div class="js_com_bg_main com-bg-main com-bg-main-02"></div>
+    </div>
+
+    <div class="js_com_fixed_menu_subpage com-fixed-menu-subpage">
+      <ul class="menu">
+        <li class="item">
+          <a href="#sec_connected" class="link">
+            <span class="dot"></span>
+            <span class="_pc text">都心直結</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#sec_line_life" class="link">
+            <span class="dot"></span>
+            <span class="_pc text">中央線ライフ</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="js_com_mv com-mv">
+      <figure class="image">
+        <img src="<?php echo h($path_img); ?>/access/img_mv.jpg" alt="都心直結の、スマートなアクセス。">
+      </figure>
+      <div class="content">
+        <p class="f-zen title">ACCESS</p>
+        <h2 class="f-shippori heading">都心直結の、スマートなアクセス。</h2>
+      </div>
+    </div>
+
+    <div class="js_com_intro com-intro">
+      <h2 class="f-cormorant heading m_left">ACCESS</h2>
+      <div class="content">
+        <div class="text-wrap">
+          <div class="text-box">
+            <p class="js_text_front text text-front">西武新宿線「上石神井」駅より、</p>
+            <p class="text text-back">西武新宿線「上石神井」駅より、</p>
+          </div>
+          <div class="text-box">
+            <p class="js_text_front text text-front">都心直結のスピーディーなアクセス。</p>
+            <p class="text text-back">都心直結のスピーディーなアクセス。</p>
+          </div>
+        </div>
+        <div class="text-wrap">
+          <div class="text-box">
+            <p class="js_text_front text text-front">バス利用で中央線沿線の</p>
+            <p class="text text-back">バス利用で中央線沿線の</p>
+          </div>
+          <div class="text-box">
+            <p class="js_text_front text text-front">人気エリアもテリトリーに。</p>
+            <p class="text text-back">人気エリアもテリトリーに。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- ____________________//content____________________ -->
   </main>
 

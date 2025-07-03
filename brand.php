@@ -15,7 +15,7 @@ include(dirname(__FILE__) . '/inc/head.php');
    
   <main id="mainWrap" class="active">
     <!-- ____________________content____________________ -->
-     <div class="com-bg-main-wrap">
+    <div class="com-bg-main-wrap">
       <div class="js_com_bg_main com-bg-main com-bg-main-02"></div>
     </div>
 
@@ -42,7 +42,7 @@ include(dirname(__FILE__) . '/inc/head.php');
       </ul>
     </div>
     
-    <div class="js_com_mv com-mv">
+    <div class="js_com_mv com-mv com-mv-custom">
       <figure class="image">
         <img src="<?php echo h($path_img); ?>/brand/img_mv.jpg" alt="総合地所の最上級シリーズ">
       </figure>
