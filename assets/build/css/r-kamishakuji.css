@@ -1777,7 +1777,7 @@ figure.m_scale.m_scale_on img {
 .com-mv {
   position: relative;
   margin-top: 8.6rem;
-  margin-bottom: 17.5rem;
+  margin-bottom: 11.6rem;
 }
 .com-mv.active .image {
   -webkit-transform: scale(1);
@@ -1943,7 +1943,7 @@ figure.m_scale.m_scale_on img {
   }
 }
 .com-intro {
-  margin-bottom: 35rem;
+  margin-bottom: 37.2rem;
 }
 .com-intro .heading {
   font-size: 11rem;
@@ -2853,7 +2853,7 @@ figure.m_scale.m_scale_on img {
   color: #caad1a;
 }
 #pageBrand .com-mv {
-  margin-bottom: 16.8rem;
+  margin-bottom: 10.9rem;
 }
 @media screen and (max-width: 750px) {
   #pageBrand .com-mv {
@@ -2890,7 +2890,7 @@ figure.m_scale.m_scale_on img {
   text-align: center;
 }
 #pageBrand .sec-intro .txt:not(:first-of-type) {
-  margin-top: 4rem;
+  margin-top: 3.4rem;
 }
 #pageBrand .sec-intro .renai-group {
   width: 118rem;
@@ -2915,7 +2915,7 @@ figure.m_scale.m_scale_on img {
   -ms-grid-columns: 1fr 2.4rem 1fr 2.4rem 1fr 2.4rem 1fr;
   grid-template-columns: repeat(4, 1fr);
   gap: 2.4rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 9.5rem;
 }
 #pageBrand .sec-intro .renai-list .item {
   display: -webkit-box;
@@ -3549,7 +3549,7 @@ figure.m_scale.m_scale_on img {
 #pageLocation .sec-position {
   background-color: #2F3829;
   padding-top: 13.4rem;
-  padding-bottom: 26.4rem;
+  padding-bottom: 24.1rem;
   position: relative;
 }
 #pageLocation .sec-position .image-01 {

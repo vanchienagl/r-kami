@@ -20,7 +20,7 @@
   // .com-mv
   // ______________________________________
   .com-mv {
-    margin-bottom: 16.8rem;
+    margin-bottom: 10.9rem;
   }
   @include mq() {
     .com-mv {
@@ -61,7 +61,7 @@
       letter-spacing: 0.12em;
       text-align: center;
       &:not(:first-of-type) {
-        margin-top: 4rem;
+        margin-top: 3.4rem;
       }
     }
     .renai {
@@ -86,7 +86,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2.4rem;
-        margin-bottom: 9.6rem;
+        margin-bottom: 9.5rem;
         .item {
           &-01 {
             .logo {
