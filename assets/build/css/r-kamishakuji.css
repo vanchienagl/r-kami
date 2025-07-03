@@ -305,7 +305,7 @@ body button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 4.8rem;
+  gap: 4.9rem;
 }
 .header-content .nav-menu .list {
   display: -webkit-box;
@@ -530,7 +530,7 @@ body button {
 }
 .footer .box-contact {
   width: 41.9rem;
-  margin: 0 auto 7rem;
+  margin: 0 auto 6.5rem;
   text-align: center;
 }
 .footer .box-contact .title {
@@ -541,7 +541,7 @@ body button {
   font-size: 1.2rem;
   color: #1C1C1C;
   letter-spacing: 0.07em;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.3rem;
 }
 .footer .box-contact .tel-number {
   display: -webkit-box;
@@ -556,7 +556,7 @@ body button {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.7rem;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.4rem;
   pointer-events: none;
 }
 .footer .box-contact .tel-number span {
@@ -604,7 +604,7 @@ body button {
 .footer .box-banner .banners-01 {
   width: 79.2rem;
   gap: 5.7rem;
-  margin-bottom: 4.9rem;
+  margin-bottom: 4.7rem;
 }
 .footer .box-banner .banners-01 .banner-01 {
   width: 19.5rem;
@@ -627,12 +627,13 @@ body button {
   opacity: 0.7;
 }
 .footer .box-copyright {
-  margin-top: 7.6rem;
+  margin-top: 7.4rem;
 }
 .footer .box-copyright .text {
   font-size: 1.2rem;
   text-align: center;
   color: #1C1C1C;
+  letter-spacing: 0.07em;
 }
 .footer .box-copyright .text.has-bg {
   height: 2.5rem;
@@ -649,7 +650,7 @@ body button {
           align-items: center;
   background-color: #1C1C1C;
   color: #F7FAF6;
-  margin-top: 2.8rem;
+  margin-top: 2.7rem;
 }
 
 @media screen and (max-width: 750px) {
@@ -755,9 +756,11 @@ body button {
   }
 }
 button.nav-btn {
-  width: 3.3rem;
-  height: auto;
+  width: 4rem;
+  height: 4rem;
   position: relative;
+  top: 0.6rem;
+  right: 0.1rem;
 }
 button.nav-btn span {
   position: absolute;
@@ -768,15 +771,14 @@ button.nav-btn span {
 }
 button.nav-btn .text {
   display: inline-block;
-  position: static;
   height: auto;
   background-color: transparent;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #F7FAF6;
   font-weight: 400;
   letter-spacing: 0.29em;
+  top: 2.2rem;
   text-align: center;
-  margin-top: 1.5rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -795,7 +797,7 @@ button.nav-btn span:nth-of-type(1) {
 }
 
 button.nav-btn span:nth-of-type(2) {
-  top: 0.8rem;
+  top: 1.2rem;
 }
 
 button.nav-btn span:nth-of-type(1) {
@@ -940,17 +942,18 @@ button.nav-btn.active .text {
 
 @media screen and (max-width: 750px) {
   button.nav-btn {
-    width: 20px;
+    width: 6rem;
+    height: 5rem;
   }
   button.nav-btn span {
     height: 1px;
   }
   button.nav-btn .text {
-    font-size: 5px;
-    margin-top: 17px;
+    font-size: 1.6rem;
+    top: 2.7rem;
   }
   button.nav-btn span:nth-of-type(2) {
-    top: 10px;
+    top: 1.5rem;
   }
 }
 .hamburger-menu {
@@ -2113,7 +2116,7 @@ figure.m_scale.m_scale_on img {
 #pageTop .sec-firstview .logo {
   width: 24.8rem;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 7px);
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2149,7 +2152,7 @@ figure.m_scale.m_scale_on img {
   line-height: 1.26;
   color: #25381C;
   position: absolute;
-  left: 50%;
+  left: calc(50% - 62px);
   top: 14.2rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -2290,16 +2293,11 @@ figure.m_scale.m_scale_on img {
           align-items: center;
 }
 #pageTop .sec-p .content {
-  width: 75.1rem;
-  margin: 0 0 0 10rem;
+  width: 79.9rem;
+  margin: 0 0 0 12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2311,7 +2309,7 @@ figure.m_scale.m_scale_on img {
           box-shadow: rgba(0, 0, 0, 0.06) 8px 46px 40px;
 }
 #pageTop .sec-p .info {
-  width: 35.9rem;
+  width: 40rem;
 }
 #pageTop .sec-p .info .desc {
   font-size: 3.2rem;
@@ -2515,7 +2513,7 @@ figure.m_scale.m_scale_on img {
 }
 #pageTop .sec-p-top .description {
   width: 35.7rem;
-  padding-left: 63rem;
+  padding-left: 56.4rem;
 }
 #pageTop .sec-p-top .description .text {
   font-size: 2.4rem;
@@ -2581,6 +2579,7 @@ figure.m_scale.m_scale_on img {
   letter-spacing: 0.07em;
   line-height: 2;
   text-align: center;
+  padding-left: 2rem;
   margin-bottom: 24.8rem;
 }
 #pageTop .sec-information .list-data {
@@ -2593,16 +2592,17 @@ figure.m_scale.m_scale_on img {
   margin: 0 auto 18.8rem;
   padding-top: 8.2rem;
   border-top: 1px solid #C3C3C3;
+  position: relative;
+  left: -0.3rem;
 }
 #pageTop .sec-information .list-data .item-01 {
   width: 47.6rem;
   margin-left: 3.4rem;
   margin-right: 6.1rem;
-  margin-bottom: 7rem;
+  margin-bottom: 6.6rem;
 }
 #pageTop .sec-information .list-data .item-02 {
   width: 33.9rem;
-  margin-bottom: 7.5rem;
 }
 #pageTop .sec-information .list-data .item-03 {
   width: 42.6rem;
@@ -2625,12 +2625,14 @@ figure.m_scale.m_scale_on img {
 #pageTop .sec-information .box-info .title {
   color: #82877E;
   text-align: center;
+  line-height: 1;
   margin-bottom: 2.2rem;
 }
-#pageTop .sec-information .box-info .heading {
+#pageTop .sec-information .box-info .head {
   font-size: 3rem;
   font-weight: 500;
   text-align: center;
+  line-height: 1;
   color: #1C1C1C;
   letter-spacing: 0.15em;
   margin-bottom: 3.2rem;
@@ -2642,7 +2644,7 @@ figure.m_scale.m_scale_on img {
   text-align: center;
   color: #1C1C1C;
   letter-spacing: 0.15em;
-  margin-bottom: 6.1rem;
+  margin-bottom: 5.6rem;
 }
 #pageTop .sec-information .box-info .buttons {
   width: 65.8rem;
@@ -2681,7 +2683,6 @@ figure.m_scale.m_scale_on img {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin-bottom: 0;
   }
   #pageTop .sec-information .list-data .item-03 {
     width: -webkit-fit-content;
@@ -2702,7 +2703,7 @@ figure.m_scale.m_scale_on img {
   #pageTop .sec-information .box-info .title {
     font-size: 2.4rem;
   }
-  #pageTop .sec-information .box-info .heading {
+  #pageTop .sec-information .box-info .head {
     font-size: 4rem;
   }
   #pageTop .sec-information .box-info .text {
@@ -2732,12 +2733,12 @@ figure.m_scale.m_scale_on img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.5rem;
+  gap: 1.8rem;
   position: fixed;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 11.2rem;
+  bottom: 13.6rem;
   z-index: 3;
   -webkit-transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
   transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);

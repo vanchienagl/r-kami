@@ -232,12 +232,12 @@ include(dirname(__FILE__) . '/inc/head.php');
             <img loading="lazy" src="<?php echo h($path_img); ?>/top/txt_information_3.svg" alt="7,500㎡超/全106邸">
           </li>
           <li class="item item-04 m_down">
-            <img loading="lazy" src="<?php echo h($path_img); ?>/top/txt_information_1.svg" alt="認定低炭素レジデンス">
+            <img loading="lazy" src="<?php echo h($path_img); ?>/top/txt_information_4.svg" alt="認定低炭素レジデンス">
           </li>
         </ul>
         <div class="box-info">
           <p class="title f-zen m_down">INFORMATION</p>
-          <p class="heading m_down">物件エントリー受付開始</p>
+          <p class="head m_down">物件エントリー受付開始</p>
           <p class="text m_down">物件エントリーいただいた方には、<br>販売日程や物件パンフレットなどの最新情報を限定サイトにて、<br>いち早くご案内いたします。</p>
           <div class="com-buttons buttons m_down">
             <a href="#" class="button f-zen-old is-entry">物件エントリー<span class="arrow"></span></a>
