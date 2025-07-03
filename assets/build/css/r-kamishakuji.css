@@ -3424,6 +3424,12 @@ figure.m_scale.m_scale_on img {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+  white-space: nowrap;
+}
+@media screen and (max-width: 750px) {
+  #pageLocation .c-heading .txt-ja {
+    font-size: 2rem;
+  }
 }
 #pageLocation .c-box-content {
   width: -webkit-fit-content;
@@ -3451,6 +3457,11 @@ figure.m_scale.m_scale_on img {
   letter-spacing: 0.12em;
   color: #F7FAF6;
   text-align: center;
+}
+@media screen and (max-width: 750px) {
+  #pageLocation .c-box-content .brief {
+    font-size: 1.6rem;
+  }
 }
 #pageLocation .c-gallery {
   width: 85rem;
@@ -3509,6 +3520,30 @@ figure.m_scale.m_scale_on img {
 #pageLocation .c-gallery .value {
   font-size: 1.1rem;
 }
+@media screen and (max-width: 750px) {
+  #pageLocation .c-gallery {
+    width: 100%;
+    gap: 4rem;
+  }
+  #pageLocation .c-gallery-02 {
+    margin-bottom: 11.1rem;
+  }
+  #pageLocation .c-gallery-03 {
+    margin-bottom: 0;
+  }
+  #pageLocation .c-gallery .item {
+    width: 100%;
+  }
+  #pageLocation .c-gallery .item-full {
+    width: 100%;
+  }
+  #pageLocation .c-gallery span {
+    font-size: 2rem;
+  }
+  #pageLocation .c-gallery .value {
+    font-size: 1.7rem;
+  }
+}
 #pageLocation .sec-position {
   background-color: #2F3829;
   padding-top: 13.4rem;
@@ -3560,6 +3595,36 @@ figure.m_scale.m_scale_on img {
   text-align: right;
   margin-top: 1.4rem;
 }
+@media screen and (max-width: 750px) {
+  #pageLocation .sec-position {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 13.4rem;
+  }
+  #pageLocation .sec-position .image-01 {
+    top: 1.7rem;
+  }
+  #pageLocation .sec-position .image-02 {
+    width: 100%;
+  }
+  #pageLocation .sec-position .gallery {
+    width: 100%;
+    gap: 4rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #pageLocation .sec-position .gallery .item-01,
+  #pageLocation .sec-position .gallery .item-02,
+  #pageLocation .sec-position .gallery .item-03,
+  #pageLocation .sec-position .gallery .item-04 {
+    width: 100%;
+  }
+  #pageLocation .sec-position .gallery .caption {
+    font-size: 1.5rem;
+  }
+}
 #pageLocation .sec-part {
   padding-top: 29.2rem;
   position: relative;
@@ -3579,19 +3644,234 @@ figure.m_scale.m_scale_on img {
   margin: 0 auto;
   mix-blend-mode: multiply;
 }
+@media screen and (max-width: 750px) {
+  #pageLocation .sec-part {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #pageLocation .sec-part .image-01 {
+    top: 1.8rem;
+  }
+  #pageLocation .sec-part .heading {
+    margin-bottom: 8.4rem;
+  }
+  #pageLocation .sec-part .image-02 {
+    width: 100%;
+  }
+}
 #pageLocation .sec-convenience {
   padding-top: 36.3rem;
-  padding-bottom: 25rem;
   position: relative;
 }
 #pageLocation .sec-convenience .image-01 {
   width: 43.7rem;
   height: 43.7rem;
   position: absolute;
-  top: -18.1rem;
+  top: 18.1rem;
   right: 1.8rem;
 }
 #pageLocation .sec-convenience .heading {
   margin-bottom: 8.4rem;
+}
+@media screen and (max-width: 750px) {
+  #pageLocation .sec-convenience {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #pageLocation .sec-convenience .image-01 {
+    top: 13rem;
+  }
+}
+#pageLocation .sec-information {
+  background-color: #2F3829;
+  padding-top: 17.5rem;
+  padding-bottom: 25.4rem;
+  margin-top: 25rem;
+}
+#pageLocation .sec-information .heading {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.26;
+  letter-spacing: 0.05em;
+  color: #F7FAF6;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+#pageLocation .sec-information .tabs {
+  width: 120rem;
+  margin: 0 auto;
+}
+#pageLocation .sec-information .tab-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+#pageLocation .sec-information .tab-btn {
+  width: 15rem;
+  height: 6.3rem;
+  font-family: "Zen Kaku Gothic New", serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  border: 1px solid #82877E;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  padding: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#pageLocation .sec-information .tab-btn:hover,
+#pageLocation .sec-information .tab-btn.active {
+  background-color: #FFFFFF;
+  color: #1C1C1C;
+}
+#pageLocation .sec-information .tab-content {
+  display: none;
+}
+#pageLocation .sec-information .tab-content.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 4.3rem;
+}
+#pageLocation .sec-information .map {
+  width: 90.9rem;
+  height: 56.7rem;
+  aspect-ratio: 909/567;
+}
+#pageLocation .sec-information .map iframe {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#pageLocation .sec-information .address {
+  width: 24.7rem;
+}
+#pageLocation .sec-information .address-list {
+  counter-reset: item;
+  max-height: 56.7rem;
+  padding-left: 2.5rem;
+  overflow-y: scroll;
+  direction: rtl;
+  scrollbar-gutter: stable both-edges;
+}
+#pageLocation .sec-information .address-list .item {
+  counter-increment: item;
+  direction: ltr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 0.6rem;
+}
+#pageLocation .sec-information .address-list .item .txt {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #FFFFFF;
+}
+#pageLocation .sec-information .address-list .item span {
+  font-size: 1rem;
+}
+#pageLocation .sec-information .address-list .item:not(:first-child) {
+  margin-top: 1.3rem;
+}
+#pageLocation .sec-information .address-list .item::before {
+  content: counter(item) ". ";
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #fff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 0.2rem;
+}
+#pageLocation .sec-information .address-list::-webkit-scrollbar {
+  width: 3px;
+}
+#pageLocation .sec-information .address-list::-webkit-scrollbar-track {
+  background: #F7FAF6;
+}
+#pageLocation .sec-information .address-list::-webkit-scrollbar-thumb {
+  background-color: rgb(28, 28, 28);
+}
+#pageLocation .sec-information .address-list::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(28, 28, 28, 0.9);
+  cursor: pointer;
+}
+@media screen and (max-width: 750px) {
+  #pageLocation .sec-information {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #pageLocation .sec-information .tabs {
+    width: 100%;
+  }
+  #pageLocation .sec-information .tab-buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+  #pageLocation .sec-information .tab-btn {
+    width: calc(33.3333333333% - 2rem);
+    height: 8rem;
+    font-size: 2rem;
+  }
+  #pageLocation .sec-information .tab-content.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5rem;
+  }
+  #pageLocation .sec-information .map {
+    width: 100%;
+  }
+  #pageLocation .sec-information .address {
+    width: 100%;
+  }
+  #pageLocation .sec-information .address-list {
+    max-height: 103rem;
+    padding-left: 3rem;
+  }
+  #pageLocation .sec-information .address-list .item {
+    gap: 1.3rem;
+  }
+  #pageLocation .sec-information .address-list .item .txt {
+    font-size: 2rem;
+  }
+  #pageLocation .sec-information .address-list .item span {
+    font-size: 1.5rem;
+  }
+  #pageLocation .sec-information .address-list .item:not(:first-child) {
+    margin-top: 3rem;
+  }
+  #pageLocation .sec-information .address-list .item::before {
+    font-size: 2rem;
+    margin-top: 0.4rem;
+  }
 }
 /*# sourceMappingURL=r-kamishakuji.css.map */

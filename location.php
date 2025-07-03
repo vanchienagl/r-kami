@@ -287,13 +287,53 @@ include(dirname(__FILE__) . '/inc/head.php');
         </div>
       </div>
     </section>
+
+    <section class="sec-information">
+      <h2 class="f-shippori heading">LIFE INFORMATION</h2>
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button class="js_tab_btn tab-btn" data-tab="tab1">商業施設</button>
+          <button class="js_tab_btn tab-btn" data-tab="tab2">医療施設</button>
+          <button class="js_tab_btn tab-btn" data-tab="tab3">文化・スポーツ・<br>レジャー</button>
+          <button class="js_tab_btn tab-btn" data-tab="tab4">公園</button>
+          <button class="js_tab_btn tab-btn active" data-tab="tab5">子育て・教育</button>
+          <button class="js_tab_btn tab-btn" data-tab="tab6">金融・公共施設</button>
+          <button class="js_tab_btn tab-btn" data-tab="tab7">官公署</button>
+        </div>
+        <div class="tab-contents">
+          <div class="js_tab_content tab-content" id="tab1">
+            <?php include(dirname(__FILE__) . '/inc/tab-content.php'); ?>
+          </div>
+          <div class="js_tab_content tab-content" id="tab2">
+            <?php include(dirname(__FILE__) . '/inc/tab-content.php'); ?>
+          </div>
+          <div class="js_tab_content tab-content" id="tab3">
+            <?php include(dirname(__FILE__) . '/inc/tab-content.php'); ?>
+          </div>
+          <div class="js_tab_content tab-content" id="tab4">
+            <?php include(dirname(__FILE__) . '/inc/tab-content.php'); ?>
+          </div>
+          <div class="js_tab_content tab-content active" id="tab5">
+            <?php include(dirname(__FILE__) . '/inc/tab-content.php'); ?>
+          </div>
+          <div class="js_tab_content tab-content" id="tab6">
+            <?php include(dirname(__FILE__) . '/inc/tab-content.php'); ?>
+          </div>
+          <div class="js_tab_content tab-content" id="tab7">
+            <?php include(dirname(__FILE__) . '/inc/tab-content.php'); ?>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- ____________________//content____________________ -->
   </main>
 
   <?php
-  $note = '※1.長谷工総合研究所調べ(2023年12月末時点)。<br>
-  ※2マンション販売取り扱いについては、長谷工総合研究所データ（1978年以降）を基にしております。※関東圏は、東京、神奈川、千葉、埼玉、茨城、栃木物件対象。※長谷工アーベストの前身、長谷川工務店マンション部、エイチ・ケイ販売専門会社、長谷工販売、長谷工販売関西による実績も含む。<br>
-  ※3、※4 出典：2024年12月末現在（長谷工コーポレーションHPより）';
+    $note = '※掲載の概念図は地図を基に描き起こしたもので周辺建物や鉄道、道路など省略、簡略化して表現しており実際とは異なります。<br>
+    ※掲載の環境写真は2024年10月・2025年2月に撮影したものです。<br>
+    ※掲載の距離・徒歩分数は地図上を計測し80mを1分として算出（端数は切上げ）したものです。<br>
+    ※掲載のimage photoはイメージであり、実際とは異なります。<br>
+    ※掲載の情報は2025年2月時点のもので、今後変更になる場合がございます。';
   ?>
 
   <?php

@@ -184,6 +184,7 @@ $(function () {
   const segments = path.split('/');
   const pageName = segments.pop().split('.')[0];
   let activeImagePage = '';
+
   if (pageName === '') {
     activeImagePage = document.querySelector(`#js_hamburger_menu .image img.is-top`);
   } else {
@@ -321,7 +322,7 @@ const loadFixedMenuSubPage = (() => {
           trigger: secShowMenu,
           start: 'top 50%',
           endTrigger: secHideMenu,
-          end: "bottom top",
+          end: "bottom 25%",
           toggleClass: { targets: fixedMenuPages, className: "show" },
           // markers: true,
         },
