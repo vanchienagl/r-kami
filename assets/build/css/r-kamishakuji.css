@@ -1054,7 +1054,7 @@ button.nav-btn.active .text {
   width: 30.1rem;
 }
 .hamburger-menu .menus .menu-item:not(:first-of-type) {
-  margin-top: 3.5rem;
+  margin-top: 3.2rem;
 }
 .hamburger-menu .menus .menu-link {
   display: -webkit-box;
@@ -1091,6 +1091,7 @@ button.nav-btn.active .text {
 }
 .hamburger-menu .menus .menu-sub {
   margin-top: 1.6rem;
+  margin-left: 2.2rem;
 }
 .hamburger-menu .menus .menu-sub .item:not(:first-child) {
   margin-top: 0.4rem;

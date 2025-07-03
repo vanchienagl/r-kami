@@ -207,7 +207,7 @@ button.nav-btn.active .text {
     }
     .menu-item {
       &:not(:first-of-type) {
-        margin-top: 3.5rem;
+        margin-top: 3.2rem;
       }
     }
     .menu-link {
@@ -239,6 +239,7 @@ button.nav-btn.active .text {
     }
     .menu-sub {
       margin-top: 1.6rem;
+      margin-left: 2.2rem;
       .item {
         &:not(:first-child) {
           margin-top: 0.4rem;
