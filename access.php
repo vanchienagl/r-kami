@@ -96,7 +96,7 @@ include(dirname(__FILE__) . '/inc/head.php');
               <p class="name">高田馬場</p>
               <div class="info">
                 <p class="time">（日中時13分）</p>
-                <p class="minute">2駅直通14分</p>
+                <p class="minute">2駅直通<span class="num">14</span><span class="point">分</span></p>
               </div>
             </div>
             <figure class="image">
@@ -109,7 +109,7 @@ include(dirname(__FILE__) . '/inc/head.php');
               <p class="name">大手町</p>
               <div class="info">
                 <p class="time">（日中時33分）</p>
-                <p class="minute">30分</p>
+                <p class="minute"><span class="num">30</span><span class="point">分</span></p>
               </div>
             </div>
             <figure class="image">
@@ -122,7 +122,7 @@ include(dirname(__FILE__) . '/inc/head.php');
               <p class="name">新宿</p>
               <div class="info">
                 <p class="time">（日中時26分）</p>
-                <p class="minute">23分</p>
+                <p class="minute"><span class="num">23</span><span class="point">分</span></p>
               </div>
             </div>
             <figure class="image">
@@ -135,7 +135,7 @@ include(dirname(__FILE__) . '/inc/head.php');
               <p class="name">池袋</p>
               <div class="info">
                 <p class="time">（日中時23分）</p>
-                <p class="minute">24分</p>
+                <p class="minute"><span class="num">24</span><span class="point">分</span></p>
               </div>
             </div>
             <figure class="image">
@@ -148,7 +148,7 @@ include(dirname(__FILE__) . '/inc/head.php');
               <p class="name">東京</p>
               <div class="info">
                 <p class="time">（日中時39分）</p>
-                <p class="minute">37分</p>
+                <p class="minute"><span class="num">37</span><span class="point">分</span></p>
               </div>
             </div>
             <figure class="image">
@@ -161,7 +161,7 @@ include(dirname(__FILE__) . '/inc/head.php');
               <p class="name">渋谷</p>
               <div class="info">
                 <p class="time">（日中時32分）</p>
-                <p class="minute">30分</p>
+                <p class="minute"><span class="num">30</span><span class="point">分</span></p>
               </div>
             </div>
             <figure class="image">

@@ -3928,6 +3928,7 @@ figure.m_scale.m_scale_on img {
   -ms-grid-columns: 1fr 2.6rem 1fr 2.6rem 1fr;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.9rem 2.6rem;
+  margin-bottom: 3.9rem;
 }
 #pageAccess .sec-connected .gallery-list .heading {
   display: -webkit-box;
@@ -3936,13 +3937,66 @@ figure.m_scale.m_scale_on img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 1rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 5%;
+  margin-bottom: 1.6rem;
 }
 #pageAccess .sec-connected .gallery-list .name {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  width: 45%;
+  font-family: "Shippori Mincho", serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
 }
-#pageAccess .sec-connected .gallery-list .image img {
+#pageAccess .sec-connected .gallery-list .info {
+  width: 55%;
+}
+#pageAccess .sec-connected .gallery-list .time {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  text-align: right;
+}
+#pageAccess .sec-connected .gallery-list .minute {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.07em;
+  color: #CDC727;
+  text-align: right;
+}
+#pageAccess .sec-connected .gallery-list .num {
+  font-size: 2.4rem;
+}
+#pageAccess .sec-connected .gallery-list .point {
+  font-size: 2rem;
+}
+#pageAccess .sec-connected .gallery-list img {
   border-radius: 4px;
+}
+#pageAccess .sec-connected .gallery-list .caption {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-top: 0.8rem;
+}
+#pageAccess .sec-connected .gallery-note {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=r-kamishakuji.css.map */
