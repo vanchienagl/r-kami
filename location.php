@@ -10,11 +10,9 @@ include(dirname(__FILE__) . '/inc/head.php');
 <!-- ____________________//head____________________ -->
 
 <body id="pageLocation">
-  <?php
-  $page = 'index';
-  include(dirname(__FILE__) . '/inc/header.php');
-  ?>
-  <!-- ______main______________//header____________________ -->
+  <?php include(dirname(__FILE__) . '/inc/header.php'); ?>
+  <!-- ____________________//header____________________ -->
+   
   <main id="mainWrap" class="active">
     <!-- ____________________content____________________ -->
      <div class="com-bg-main-wrap">
@@ -336,9 +334,7 @@ include(dirname(__FILE__) . '/inc/head.php');
     ※掲載の情報は2025年2月時点のもので、今後変更になる場合がございます。';
   ?>
 
-  <?php
-  include(dirname(__FILE__) . '/inc/footer.php');
-  ?>
+  <?php include(dirname(__FILE__) . '/inc/footer.php'); ?>
   <!-- ____________________// footer -->
 
   <!-- ____________________script____________________ -->

@@ -3876,4 +3876,8 @@ figure.m_scale.m_scale_on img {
     margin-top: 0.4rem;
   }
 }
+
+#pageAccess .hamburger-menu .menu-item.is-access .menu-link .en, #pageAccess .hamburger-menu .menu-item.is-access .menu-link .ja {
+  color: #caad1a;
+}
 /*# sourceMappingURL=r-kamishakuji.css.map */

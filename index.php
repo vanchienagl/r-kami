@@ -11,15 +11,17 @@ include(dirname(__FILE__) . '/inc/head.php');
 
 <body id="pageTop">
   <?php
-  $page = 'index';
-  include(dirname(__FILE__) . '/inc/header.php');
+    $page = 'index';
+    include(dirname(__FILE__) . '/inc/header.php');
   ?>
-  <!-- ______main______________//header____________________ -->
+  <!-- ____________________//header____________________ -->
+
   <main id="mainWrap" class="active">
     <!-- ____________________content____________________ -->
      <div class="com-bg-main-wrap">
       <div class="js_com_bg_main com-bg-main com-bg-main-01"></div>
     </div>
+
     <div class="btn-scroll" id="js_btn_scroll">
       <div class="mouse">
         <div class="dot"></div>
@@ -29,6 +31,7 @@ include(dirname(__FILE__) . '/inc/head.php');
       </div>
       <p class="text">SCROLL</p>
     </div>
+    
     <div class="btn-scroll btn-scroll-right" id="js_btn_scroll_right">
       <div class="mouse">
         <div class="dot"></div>

@@ -10,11 +10,9 @@ include(dirname(__FILE__) . '/inc/head.php');
 <!-- ____________________//head____________________ -->
 
 <body id="pageBrand">
-  <?php
-  $page = 'index';
-  include(dirname(__FILE__) . '/inc/header.php');
-  ?>
-  <!-- ______main______________//header____________________ -->
+  <?php include(dirname(__FILE__) . '/inc/header.php'); ?>
+  <!-- ____________________//header____________________ -->
+   
   <main id="mainWrap" class="active">
     <!-- ____________________content____________________ -->
      <div class="com-bg-main-wrap">
@@ -193,9 +191,7 @@ include(dirname(__FILE__) . '/inc/head.php');
     ※3、※4 出典：2024年12月末現在（長谷工コーポレーションHPより）';
   ?>
 
-  <?php
-  include(dirname(__FILE__) . '/inc/footer.php');
-  ?>
+  <?php include(dirname(__FILE__) . '/inc/footer.php'); ?>
   <!-- ____________________// footer -->
 
   <!-- ____________________script____________________ -->
