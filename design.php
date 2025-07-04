@@ -45,7 +45,7 @@ include(dirname(__FILE__) . '/inc/head.php');
       </div>
     </div>
 
-    <div class="com-intro">
+    <div class="js_com_intro com-intro">
       <h2 class="f-cormorant heading m_left">DESIGN</h2>
       <div class="content">
         <div class="text-wrap">
