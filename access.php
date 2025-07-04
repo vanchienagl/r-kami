@@ -41,7 +41,7 @@ include(dirname(__FILE__) . '/inc/head.php');
       </figure>
       <div class="content">
         <p class="f-zen title">ACCESS</p>
-        <h2 class="f-shippori heading">都心直結の、スマートなアクセス。</h2>
+        <h2 class="heading">都心直結の、スマートなアクセス。</h2>
       </div>
     </div>
 
@@ -81,8 +81,8 @@ include(dirname(__FILE__) . '/inc/head.php');
       </figure>
 
       <div class="com-box-content box-content">
-        <h3 class="f-shippori head m_down">JR山手線直結、新宿エリアへも<br>ダイレクトの都心アクセス。</h3>
-        <p class="f-shippori brief m_down">徒歩5分の西武新宿線「上石神井」駅から、<br>JR山手線「高田馬場」駅へダイレクト。<br>新宿エリアへもスマートなアクセスをかなえます。</p>
+        <h3 class="head m_down">JR山手線直結、新宿エリアへも<br>ダイレクトの都心アクセス。</h3>
+        <p class="brief m_down">徒歩5分の西武新宿線「上石神井」駅から、<br>JR山手線「高田馬場」駅へダイレクト。<br>新宿エリアへもスマートなアクセスをかなえます。</p>
       </div>
 
       <figure class="image-03 m_down">
@@ -174,15 +174,15 @@ include(dirname(__FILE__) . '/inc/head.php');
       </div>
 
       <div class="morning-smoothly">
-        <h2 class="f-shippori heading m_down">朝をスムーズに、お帰りにゆとりを。</h2>
+        <h2 class="heading m_down">朝をスムーズに、お帰りにゆとりを。</h2>
         <div class="item m_down">
-          <p class="f-shippori title">通勤シミュレーション</p>
+          <p class="title">通勤シミュレーション</p>
           <figure class="image">
             <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_10.png" alt="通勤シミュレーション">
           </figure>
         </div>
         <div class="item m_down">
-          <p class="f-shippori title">終電シミュレーション</p>
+          <p class="title">終電シミュレーション</p>
           <figure class="image">
             <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_11.png" alt="終電シミュレーション">
           </figure>
@@ -196,13 +196,13 @@ include(dirname(__FILE__) . '/inc/head.php');
       </figure>
 
       <div class="wrap-content">
-        <h2 class="f-shippori heading m_down">吉祥寺へ、西荻窪へ。<br>JR中央線へはバスアクセスでスムーズに。</h2>
+        <h2 class="heading m_down">吉祥寺へ、西荻窪へ。<br>JR中央線へはバスアクセスでスムーズに。</h2>
         <div class="box-media">
           <figure class="image m_down">
             <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_line_life_02.png" alt="image">
           </figure>
           <div class="description m_down">
-            <p class="f-shippori text">上石神井駅前のバス停から、<br>吉祥寺や西荻窪など、<br>中央線の人気エリアへアクセス可能。<br>気分に合わせて<br>多彩な行き先からセレクトできます。</p>
+            <p class="text">上石神井駅前のバス停から、<br>吉祥寺や西荻窪など、<br>中央線の人気エリアへアクセス可能。<br>気分に合わせて<br>多彩な行き先からセレクトできます。</p>
           </div>
         </div>
         <figure class="image-02 m_down">

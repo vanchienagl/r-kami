@@ -48,7 +48,7 @@ include(dirname(__FILE__) . '/inc/head.php');
       </figure>
       <div class="content">
         <p class="f-zen title">BRAND</p>
-        <h2 class="f-shippori heading">総合地所の最上級シリーズ<br>RENAI GRAND</h2>
+        <h2 class="heading">総合地所の最上級シリーズ<br>RENAI GRAND</h2>
       </div>
     </div>
 
@@ -64,7 +64,7 @@ include(dirname(__FILE__) . '/inc/head.php');
         <p class="txt">そして“ルネ”は、総合地所が開発するレジデンスの基幹ブランドとして生きつづけています。</p>
       </div>
       <div class="renai-group">
-        <h4 class="f-shippori renai-heading m_down">「ルネ」の想いを引き継いだ<br>ルネシリーズ</h4>
+        <h4 class="renai-heading m_down">「ルネ」の想いを引き継いだ<br>ルネシリーズ</h4>
         <ul class="renai-list">
           <li class="item item-01 m_down">
             <div class="info">
@@ -104,7 +104,7 @@ include(dirname(__FILE__) . '/inc/head.php');
     </section>
 
     <section class="sec-philosophy">
-      <h2 class="f-shippori heading m_down">ルネシリーズの最峰ブランド<br>ルネグランの思想</h2>
+      <h2 class="heading m_down">ルネシリーズの最峰ブランド<br>ルネグランの思想</h2>
     </section>
 
     <section class="sec-renai-grand">
@@ -113,19 +113,19 @@ include(dirname(__FILE__) . '/inc/head.php');
         <img loading="lazy" src="<?php echo h($path_img); ?>/brand/logo_renai_grand_01.png" alt="RENAI GRAND">
       </figure>
       <div class="content">
-        <h2 class="f-shippori heading m_down">「住む」を追求した<br>最上級レジデンス ルネグランとは</h2>
-        <p class="f-shippori description m_down">総合地所として、家族にとって真の寛ぎとは何かを追求し、<br>立地選定、邸宅としてのグレードや品格、<br>先進機能の導入など細部まで追求した最上級ブランド。</p>
+        <h2 class="heading m_down">「住む」を追求した<br>最上級レジデンス ルネグランとは</h2>
+        <p class="description m_down">総合地所として、家族にとって真の寛ぎとは何かを追求し、<br>立地選定、邸宅としてのグレードや品格、<br>先進機能の導入など細部まで追求した最上級ブランド。</p>
       </div>
       <div class="list-wrap">
-        <p class="f-shippori title m_down">ルネグランシリーズの条件</p>
+        <p class="title m_down">ルネグランシリーズの条件</p>
         <ul class="list">
-          <li class="f-shippori item m_left">
+          <li class="item m_left">
             <p class="txt">都市に近く、<br>永く寛ぎの時を刻む<br>土地であること</p>
           </li>
-          <li class="f-shippori item m_left">
+          <li class="item m_left">
             <p class="txt">この先を見据え<br>「新しさ」をいち早く<br>導入している<br>邸宅であること</p>
           </li>
-          <li class="f-shippori item m_left">
+          <li class="item m_left">
             <p class="txt">家族が誇れる<br>普遍的な品格を備えた<br>住まいであること</p>
           </li>
         </ul>
@@ -136,25 +136,25 @@ include(dirname(__FILE__) . '/inc/head.php');
       <h2 class="logo m_down">
         <img loading="lazy" src="<?php echo h($path_img); ?>/brand/logo_real_estate_01.png" alt="総合地所">
       </h2>
-      <p class="f-shippori description m_down">総合地所が創業以来培ってきたルネブランド。<br>外観やデザインに対するこだわりはもちろん、<br>「環境・健康・安全」への配慮や、<br>エンターテイメントを加味した共用施設など、<br>個性的な商品企画が誇りです。</p>
+      <p class="description m_down">総合地所が創業以来培ってきたルネブランド。<br>外観やデザインに対するこだわりはもちろん、<br>「環境・健康・安全」への配慮や、<br>エンターテイメントを加味した共用施設など、<br>個性的な商品企画が誇りです。</p>
       <div class="gallery">
         <div class="item m_down">
           <figure class="image">
             <img loading="lazy" src="<?php echo h($path_img); ?>/brand/img_real_estate_01.jpg" alt="ルネ成城（2006年3月竣工／93戸／分譲済）">
           </figure>
-          <p class="f-shippori text">ルネ成城（2006年3月竣工／93戸／分譲済）</p>
+          <p class="text">ルネ成城（2006年3月竣工／93戸／分譲済）</p>
         </div>
         <div class="item m_down">
           <figure class="image">
             <img loading="lazy" src="<?php echo h($path_img); ?>/brand/img_real_estate_02.jpg" alt="ルネ世田谷千歳台AYUMIE（2017年2月竣工／64戸／分譲済）">
           </figure>
-          <p class="f-shippori text">ルネ世田谷千歳台AYUMIE（2017年2月竣工／64戸／分譲済）</p>
+          <p class="text">ルネ世田谷千歳台AYUMIE（2017年2月竣工／64戸／分譲済）</p>
         </div>
         <div class="item m_down">
           <figure class="image">
             <img loading="lazy" src="<?php echo h($path_img); ?>/brand/img_real_estate_03.jpg" alt="ルネ花小金井（2012年3月竣工／302戸／分譲済）">
           </figure>
-          <p class="f-shippori text">ルネ花小金井（2012年3月竣工／302戸／分譲済）</p>
+          <p class="text">ルネ花小金井（2012年3月竣工／302戸／分譲済）</p>
         </div>
       </div>
     </section>
@@ -164,8 +164,8 @@ include(dirname(__FILE__) . '/inc/head.php');
         <img loading="lazy" src="<?php echo h($path_img); ?>/brand/logo_arvest_01.png" alt="長谷工アーベスト">
       </h2>
       <div class="info">
-        <h3 class="f-shippori heading m_down">長谷工アーベストのマンション<br>販売取扱い実績累計40万戸超</h3>
-        <p class="f-shippori description m_down">長谷工アーベストでは、<br>1978年から2021年までの44年間に、<br>関東圏で255,961戸、近畿圏で149,871戸、<br>合計で405,832戸の<br>マンション販売を取り扱っています。</p>
+        <h3 class="heading m_down">長谷工アーベストのマンション<br>販売取扱い実績累計40万戸超</h3>
+        <p class="description m_down">長谷工アーベストでは、<br>1978年から2021年までの44年間に、<br>関東圏で255,961戸、近畿圏で149,871戸、<br>合計で405,832戸の<br>マンション販売を取り扱っています。</p>
       </div>
       <figure class="image m_down">
         <img loading="lazy" src="<?php echo h($path_img); ?>/brand/img_arvest_01.png" alt="長谷工アーベストのマンション販売取扱い実績累計40万戸超">
@@ -177,8 +177,8 @@ include(dirname(__FILE__) . '/inc/head.php');
         <img loading="lazy" src="<?php echo h($path_img); ?>/brand/logo_corporation_01.png" alt="コーポレーション">
       </h2>
       <div class="info">
-        <h3 class="f-shippori heading m_down">マンション施工累計実績No.1。<br>業界に先駆けた技術開発で未来を創造します。</h3>
-        <p class="f-shippori description m_down">1969年にマンションを手がけて以来、<br>累計施工実績は約70万戸に。販売・管理・修繕を展開する<br>グループ会社から得たニーズを、事業提案・設計・施工にフィードバックできる事業体制を活かして<br>これからもお客さまの声に耳を傾け、<br>より安全・安心で快適なマンション創りに取り組んでまいります。</p>
+        <h3 class="heading m_down">マンション施工累計実績No.1。<br>業界に先駆けた技術開発で未来を創造します。</h3>
+        <p class="description m_down">1969年にマンションを手がけて以来、<br>累計施工実績は約70万戸に。販売・管理・修繕を展開する<br>グループ会社から得たニーズを、事業提案・設計・施工にフィードバックできる事業体制を活かして<br>これからもお客さまの声に耳を傾け、<br>より安全・安心で快適なマンション創りに取り組んでまいります。</p>
       </div>
       <figure class="image m_down">
         <img loading="lazy" src="<?php echo h($path_img); ?>/brand/img_corporation_01.png" alt="マンション施工累計実績No.1。業界に先駆けた技術開発で未来を創造します。">

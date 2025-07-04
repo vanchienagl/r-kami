@@ -4148,4 +4148,176 @@ figure.m_scale.m_scale_on img {
     padding: 0;
   }
 }
+
+#pageDesign .hamburger-menu .menu-item.is-design .menu-link .en, #pageDesign .hamburger-menu .menu-item.is-design .menu-link .ja {
+  color: #caad1a;
+}
+#pageDesign .sec-courtyard .box-intro {
+  background-color: #2F3829;
+  padding-top: 17.9rem;
+  padding-bottom: 15.6rem;
+}
+#pageDesign .sec-courtyard .box-intro .mv {
+  position: relative;
+  margin-bottom: 12.2rem;
+}
+#pageDesign .sec-courtyard .box-intro .text {
+  position: absolute;
+  bottom: -7.6rem;
+  right: 4.6rem;
+}
+#pageDesign .sec-courtyard .box-intro .text .en {
+  font-size: 8rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+#pageDesign .sec-courtyard .box-intro .text .ja {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.12em;
+  color: #FFFFFF;
+  text-align: right;
+}
+#pageDesign .sec-courtyard .box-intro .abinc {
+  width: 72.5rem;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: #F7FAF6;
+  padding: 4.3rem 3.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 5.4rem;
+}
+#pageDesign .sec-courtyard .box-intro .abinc .image {
+  width: 12.5rem;
+}
+#pageDesign .sec-courtyard .box-intro .abinc .info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#pageDesign .sec-courtyard .box-intro .abinc .title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.07rem;
+  color: #25381C;
+  margin-bottom: 2.2rem;
+}
+#pageDesign .sec-courtyard .box-intro .abinc .txt {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.07rem;
+  color: #25381C;
+}
+#pageDesign .sec-courtyard .box-shinrin {
+  width: 58.5rem;
+  margin: 31.9rem auto 31rem;
+}
+#pageDesign .sec-courtyard .box-shinrin .heading {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: #25381C;
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+#pageDesign .sec-courtyard .box-shinrin .brief {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.07em;
+  color: #25381C;
+  text-align: center;
+  margin-bottom: 8.8rem;
+}
+#pageDesign .sec-courtyard .box-shinrin .description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.12em;
+  color: #25381C;
+  text-align: center;
+  margin-bottom: 5.6rem;
+}
+#pageDesign .sec-facade .box-intro {
+  background-color: #2F3829;
+  padding-top: 25.1rem;
+  padding-bottom: 18.7rem;
+}
+#pageDesign .sec-facade .box-intro .mv {
+  position: relative;
+  margin-bottom: 14.5rem;
+}
+#pageDesign .sec-facade .box-intro .text {
+  position: absolute;
+  left: 27.5rem;
+  bottom: -6.6rem;
+}
+#pageDesign .sec-facade .box-intro .text .en {
+  font-size: 8rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+#pageDesign .sec-facade .box-intro .text .ja {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.12em;
+  color: #FFFFFF;
+}
+#pageDesign .sec-facade .box-intro .box-content-custom {
+  width: 75rem;
+  margin-bottom: 6.9rem;
+}
+#pageDesign .sec-facade .box-intro .box-content-custom .head,
+#pageDesign .sec-facade .box-intro .box-content-custom .brief {
+  text-align: left;
+}
+#pageDesign .sec-facade .box-intro .gallery {
+  width: 74.6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2.3rem 1fr 2.3rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.3rem;
+  margin: 0 auto 9.5rem;
+}
+#pageDesign .sec-facade .box-intro .gallery .image img {
+  border-radius: 4px;
+}
+#pageDesign .sec-facade .box-intro .gallery .caption {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #F7FAF6;
+  margin-top: 0.8rem;
+}
+#pageDesign .sec-facade .box-intro .a-design {
+  width: 102.3rem;
+  margin: 0 auto;
+}
+#pageDesign .sec-facade .box-intro .a-design .image {
+  margin-bottom: 6.5rem;
+}
+#pageDesign .sec-facade .box-intro .a-design .txt {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.07em;
+  color: #F7FAF6;
+  text-align: right;
+}
 /*# sourceMappingURL=r-kamishakuji.css.map */
