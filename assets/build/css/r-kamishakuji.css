@@ -3997,4 +3997,155 @@ figure.m_scale.m_scale_on img {
   letter-spacing: 0.02em;
   color: #FFFFFF;
 }
+#pageAccess .sec-connected .morning-smoothly {
+  width: 85rem;
+  margin: 0 auto;
+}
+#pageAccess .sec-connected .morning-smoothly .heading {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.07em;
+  color: #F7FAF6;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+#pageAccess .sec-connected .morning-smoothly .item:not(:first-child) {
+  margin-top: 4.3rem;
+}
+#pageAccess .sec-connected .morning-smoothly .title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+  color: #F7FAF6;
+  margin-bottom: 1.8rem;
+}
+@media screen and (max-width: 750px) {
+  #pageAccess .sec-connected .image-02 {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #pageAccess .sec-connected .box-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #pageAccess .sec-connected .image-03 {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #pageAccess .sec-connected .gallery {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #pageAccess .sec-connected .gallery-list {
+    -ms-grid-columns: 1fr 3rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 3rem;
+  }
+  #pageAccess .sec-connected .gallery-list .name {
+    font-size: 3rem;
+  }
+  #pageAccess .sec-connected .gallery-list .time {
+    font-size: 1.5rem;
+  }
+  #pageAccess .sec-connected .gallery-list .minute {
+    font-size: 2.4rem;
+  }
+  #pageAccess .sec-connected .gallery-list .num {
+    font-size: 3rem;
+  }
+  #pageAccess .sec-connected .gallery-list .point {
+    font-size: 2.5rem;
+  }
+  #pageAccess .sec-connected .gallery-list .caption {
+    font-size: 1.8rem;
+  }
+  #pageAccess .sec-connected .gallery-note {
+    font-size: 1.5rem;
+  }
+  #pageAccess .sec-connected .morning-smoothly {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #pageAccess .sec-connected .morning-smoothly .heading {
+    font-size: 3.6rem;
+  }
+  #pageAccess .sec-connected .morning-smoothly .title {
+    font-size: 2.4rem;
+  }
+}
+#pageAccess .sec-line-life {
+  padding-top: 22.9rem;
+  padding-bottom: 25rem;
+}
+#pageAccess .sec-line-life .image-01 {
+  margin-bottom: 10rem;
+}
+#pageAccess .sec-line-life .wrap-content {
+  width: 66.5rem;
+  margin: 0 auto;
+}
+#pageAccess .sec-line-life .heading {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.07em;
+  color: #25381C;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+#pageAccess .sec-line-life .box-media {
+  padding: 0 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.4rem;
+  margin-bottom: 8rem;
+}
+#pageAccess .sec-line-life .box-media .image {
+  width: 30.4rem;
+}
+#pageAccess .sec-line-life .box-media .description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#pageAccess .sec-line-life .box-media .text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.12em;
+  color: #25381C;
+  text-align: center;
+}
+#pageAccess .sec-line-life .image-02 {
+  padding: 0 0.7rem;
+}
+@media screen and (max-width: 750px) {
+  #pageAccess .sec-line-life .wrap-content {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #pageAccess .sec-line-life .box-media {
+    padding: 0;
+  }
+  #pageAccess .sec-line-life .box-media .text {
+    font-size: 1.7rem;
+  }
+  #pageAccess .sec-line-life .image-02 {
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=r-kamishakuji.css.map */

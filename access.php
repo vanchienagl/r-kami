@@ -80,7 +80,7 @@ include(dirname(__FILE__) . '/inc/head.php');
         <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_02.png" alt="image 02">
       </figure>
 
-      <div class="com-box-content">
+      <div class="com-box-content box-content">
         <h3 class="f-shippori head m_down">JR山手線直結、新宿エリアへも<br>ダイレクトの都心アクセス。</h3>
         <p class="f-shippori brief m_down">徒歩5分の西武新宿線「上石神井」駅から、<br>JR山手線「高田馬場」駅へダイレクト。<br>新宿エリアへもスマートなアクセスをかなえます。</p>
       </div>
@@ -171,6 +171,43 @@ include(dirname(__FILE__) . '/inc/head.php');
           </div>
         </div>
         <p class="gallery-note">※西武新宿線「上石神井」駅より「高田馬場」駅へ：西武新宿線急行利用「新宿」「池袋」「渋谷」へ：西武新宿線急行利用、「高田馬場」でJR山手線に乗り変え「大手町」駅へ：西武新宿線急行利用、「高田馬場」駅で東京メトロ東西線に乗り換え「東京」駅へ：西武新宿線急行利用、「高田馬場」駅で東京メトロ東西線に乗換、「大手町」駅で東京メトロ丸ノ内線に乗換</p>
+      </div>
+
+      <div class="morning-smoothly">
+        <h2 class="f-shippori heading m_down">朝をスムーズに、お帰りにゆとりを。</h2>
+        <div class="item m_down">
+          <p class="f-shippori title">通勤シミュレーション</p>
+          <figure class="image">
+            <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_10.png" alt="通勤シミュレーション">
+          </figure>
+        </div>
+        <div class="item m_down">
+          <p class="f-shippori title">終電シミュレーション</p>
+          <figure class="image">
+            <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_connected_11.png" alt="終電シミュレーション">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec_line_life" class="js_sec_page sec-line-life">
+      <figure class="image-01 m_down">
+        <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_line_life_01.jpg" alt="image">
+      </figure>
+
+      <div class="wrap-content">
+        <h2 class="f-shippori heading m_down">吉祥寺へ、西荻窪へ。<br>JR中央線へはバスアクセスでスムーズに。</h2>
+        <div class="box-media">
+          <figure class="image m_down">
+            <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_line_life_02.png" alt="image">
+          </figure>
+          <div class="description m_down">
+            <p class="f-shippori text">上石神井駅前のバス停から、<br>吉祥寺や西荻窪など、<br>中央線の人気エリアへアクセス可能。<br>気分に合わせて<br>多彩な行き先からセレクトできます。</p>
+          </div>
+        </div>
+        <figure class="image-02 m_down">
+          <img loading="lazy" src="<?php echo h($path_img); ?>/access/img_sec_line_life_03.png" alt="image">
+        </figure>
       </div>
     </section>
     <!-- ____________________//content____________________ -->
